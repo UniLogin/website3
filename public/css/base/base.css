@@ -1,0 +1,7 @@
+    .center { 
+        text-align: center;
+        color: purple;
+        font-weight: 500;
+        color: var(--color-title);
+        font-size: 4rem;
+    }
