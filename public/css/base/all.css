@@ -6,3 +6,10 @@
 @import "../components/navbar.css";
 @import "../components/header.css";
 @import "../components/footer.css";
+@import "../components/social_buttons.css";
+@import "../components/heroimage.css"; 
+@import "../components/signup-form.css";
+@import "../components/trusted-by.css";
+
+@import "../components/background/background-logo.css";
+@import "../components/background/green-top-glow.css";

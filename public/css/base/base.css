@@ -1,7 +1,26 @@
-    .center { 
-        text-align: center;
-        color: purple;
-        font-weight: 500;
-        color: var(--color-title);
-        font-size: 4rem;
-    }
+.center { 
+text-align: center;
+    color: purple;
+    font-weight: 500;
+    color: var(--color-title);
+    font-size: 5.6rem;
+}
+
+html {
+    font-size: 65%;
+}
+
+main {
+    position: relative;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+}

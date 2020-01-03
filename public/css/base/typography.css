@@ -1,5 +1,12 @@
 :root {
-  -font-size: 1.6rem;
   font-family: 'Tajawal', sans-serif;
 }
 
+h1 {
+  margin: 0;
+  font-size: 5.6rem;
+}
+
+h6 {
+  font-size: 1.7rem;
+}

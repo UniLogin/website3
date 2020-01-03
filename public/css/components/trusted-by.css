@@ -1,0 +1,38 @@
+.trusted-by {
+    display: grid;
+    grid-template-columns: 25rem 2fr;
+    grid-template-rows: 1fr;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        &--title {
+            color: #B55EF7;
+            padding-bottom: 2rem;
+            position: relative;
+            padding: 0;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 9rem;
+                top: 43%;
+                width: 4.8rem;
+                height: 1px;
+                background-color: #B55EF7;
+            }
+        }
+
+        &--content {
+            margin-top: .8rem;
+            color: var(--color-text-second);
+            font-size: 1.5rem;
+        }
+    }
+
+    &__companies {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

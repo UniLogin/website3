@@ -1,0 +1,36 @@
+.background-logo {
+    position: absolute;
+    top: 3.6rem;
+    z-index: -100;
+
+    &__shape {
+        position: absolute;
+        right: -26rem;
+        width: 84.6rem;
+        height: 79.6rem;
+        z-index: -100;
+    }
+
+    &__glow {
+        position: absolute;
+        z-index: 20;
+        right: -26rem;
+        transform: translate(-15%, 55%);
+        z-index: -200;
+    }
+
+    @media only screen and (min-width: 200px) {
+        display: none;
+    }
+
+    @media only screen and (min-width: 320px) {
+        display: block;
+        width: 47.rem;
+        height: 44.2rem;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 84.6rem;
+        height: 79.6rem;
+    }
+}

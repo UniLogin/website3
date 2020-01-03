@@ -1,0 +1,17 @@
+.header {
+    padding-top: 3.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (min-width: 200px) {
+        padding-top: 1.6rem;
+    }
+
+    @media only screen and (min-width: 320px) {
+        padding-top: 3.6rem;
+    }
+
+    @media only screen and (min-width: 1200px) {
+    }
+}
