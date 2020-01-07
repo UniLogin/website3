@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 
     @media only screen and (min-width: 200px) {
         padding-top: 1.6rem;

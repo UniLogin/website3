@@ -1,0 +1,102 @@
+.start {
+    padding-top: 14rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3.3rem;
+    margin-bottom: 14rem;
+
+    &__left {
+        & > .start__card {
+            background-color: #FBF7FF;
+        }
+
+        &__title {
+
+        }
+    }
+
+    &__right {
+        grid-row: 0 / 1;
+        & > .start__card {
+            background-color: #EDFDFE;
+        }
+
+        &__cta {
+            display: flex;
+            flex-direction: column;
+            padding-left: 9.6rem;
+            margin-bottom: 10rem;
+
+            &__title {
+                font-size: 5.6rem;
+                line-height: 7.2rem;
+            }
+            &__text {
+                font-size: 1.8rem;
+                line-height: 3.2rem;
+                color: var(--color-text-second);
+            }
+        }
+
+    }
+
+    &__card {
+        border-radius: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        padding: 5.6rem 9.6rem;
+        border-radius: 1.6rem;
+
+        &__number {
+            display: flex;
+            align-items: center;
+
+            & > h6 {
+                font-weight: bold;
+                font-size: 1.7rem;
+                line-height: 5.6rem;
+            }
+        }
+
+        &__title {
+            font-size: 4rem;
+        }
+
+        &__text {
+            color: var(--color-text-second);
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+            margin: 3.6rem 0;
+        }
+
+        &__picker {
+            &__label {
+                font-size: 1.8rem;
+                color: var(--color-text-second);
+                line-height: 3.2rem;
+                font-weight: normal;
+                font-style: normal;
+                font-family: "HelveticaNeue"
+            }
+
+            &__code {
+                display: flex;
+                align-items: center;
+                height: 4.4rem;
+                background-color: #F3EBFB;
+                padding-left: 1.6rem;
+                font-size: 1.5rem;
+                border-radius: 1.3rem;
+                margin-bottom: 4rem;
+            }
+
+            &__form {
+                display: flex;
+                flex-direction: column;
+
+
+            }
+        }
+    }
+}

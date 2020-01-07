@@ -10,8 +10,12 @@ html {
     font-size: 65%;
 }
 
+header {
+}
+
 main {
     position: relative;
+    overflow: hidden;
 }
 
 button {

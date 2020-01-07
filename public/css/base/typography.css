@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url('../../assets/fonts/HelveticaNeue.ttf');
+}
+
+@font-face {
+  font-family: "HelveticaNeueMedium";
+  src: url('../../assets/fonts/HelveticaNeueMedium.ttf');
+}
+
 :root {
   font-family: 'Tajawal', sans-serif;
 }
@@ -9,4 +19,8 @@ h1 {
 
 h6 {
   font-size: 1.7rem;
+}
+
+a {
+  font-size: 1.6rem;
 }
