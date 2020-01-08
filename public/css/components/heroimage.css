@@ -1,14 +1,20 @@
 .heroimage {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1.25fr;
-    padding-top: 22.3rem;
-    position: relative;
+
+
+    & > .container {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1.25fr;
+        padding-top: 22.3rem;
+        position: relative;
+    }
     
 
     @media only screen and (min-width: 200px) {
-        grid-template-columns: 1fr;
-        grid-gap: 7.4rem;
+        & > .container {
+            grid-template-columns: 1fr;
+            grid-gap: 7.4rem;
+        }
 
         &__right {
             margin: 0 auto;
@@ -16,7 +22,9 @@
     }
 
     @media only screen and (min-width: 320px) {
-        grid-row-gap: 3rem;
+        & > .container {
+            grid-row-gap: 3rem;
+        }
     }
 
     @media only screen and (min-width: 600px) {
@@ -26,8 +34,10 @@
     }
 
     @media only screen and (min-width: 1200px) {
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1.25fr;
+        & > .container {
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1.25fr;
+        }
 
         &__left {
             margin: 0;

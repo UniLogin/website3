@@ -1,9 +1,13 @@
 .header {
-    padding-top: 3.6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
+
+
+    & > .container {
+        padding-top: 3.6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
 
     @media only screen and (min-width: 200px) {
         padding-top: 1.6rem;
