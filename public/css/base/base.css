@@ -8,6 +8,7 @@ text-align: center;
 
 html {
     font-size: 65%;
+    -webkit-font-smooth: antialiased;
 }
 
 header {

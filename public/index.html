@@ -18,32 +18,35 @@
                 alt="Backround green glow">
         </div>
         <div class="container">
-            <img src="./assets/images/svg/LogoTitle.svg" alt="UniLogin Logo">
-            <nav class="navbar">
-                <ul class="social__links">
-                    <li class="social__link">
-                        <a href="#">
-                            <button>
-                                <img src="./assets/images/svg/SocialLinks/Medium.svg" alt="Medium logo">
-                            </button>
-                        </a>
-                    <li class="social__link">
-                        <a href="#">
-                            <button>
-                                <img src="./assets/images/svg/SocialLinks/Discord.svg" alt="Discord logo">
-                            </button>
-                        </a>
-                    </li>
-                    <li class="social__link">
-                        <a href="#">
-                            <button>
-                                <img src="./assets/images/svg/SocialLinks/Twitter.svg" alt="Twitter logo"
-                                    class="social__link--twitter">
-                            </button>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="header__row">
+
+                <img src="./assets/images/svg/LogoTitle.svg" alt="UniLogin Logo">
+                <nav class="navbar">
+                    <ul class="social__links">
+                        <li class="social__link">
+                            <a href="#">
+                                <button>
+                                    <img src="./assets/images/svg/SocialLinks/Medium.svg" alt="Medium logo">
+                                </button>
+                            </a>
+                        <li class="social__link">
+                            <a href="#">
+                                <button>
+                                    <img src="./assets/images/svg/SocialLinks/Discord.svg" alt="Discord logo">
+                                </button>
+                            </a>
+                        </li>
+                        <li class="social__link">
+                            <a href="#">
+                                <button>
+                                    <img src="./assets/images/svg/SocialLinks/Twitter.svg" alt="Twitter logo"
+                                        class="social__link--twitter">
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -51,8 +54,9 @@
         <img class="background-logo__shape" src="./assets/images/svg/Logo.svg" alt="Background UniLogin logo">
         <img class="background-logo__glow" src="./assets/images/svg/Background/LogoUnderGlow.svg"
             alt="Background logo underglow">
-            <section class="heroimage">
-                <div class="container">
+        <section class="heroimage">
+            <div class="container">
+                <div class="heroimage__row">
                     <div class="heroimage__left">
                         <h1 class="heroimage__left__title">Magic onboarding for Ethereum apps</h1>
                         <div class="heroimage__left__content">
@@ -66,108 +70,114 @@
                             <h5 class="signup-form__title"><span class="bold">Sign up</span> for free!</h5>
                             <div class="signup-form__input">
                                 <img src="./assets/images/svg/Logo.svg" alt="Background UniLogin logo"
-                                    class="signup-form__input__logo">
+                                    class="signup-form__input_logo">
                                 <input type="text" placeholder="yourname.yourapp.eth">
                             </div>
                             <button class="signup-form__button">Register</button>
-                            <div class="background">
+                            <div class="signup-form__background">
                                 <img class="signup_form__glow" src="./assets/images/svg/Background/FormGlow.svg"
                                     alt="Form under glow">
                             </div>
                         </form>
                     </div>
                 </div>
-            </section>
-            <section class="trusted-by">
-                <img src="./assets/images/svg/Background/PurpleLeftGlow.svg" alt="Background purple glow"
-                    class="trusted-by__background">
-                <div class="container">
-                <div class="trusted-by__text">
-                    <div class="trusted-by__text--title">
-                        <h6>Trusted by</h6>
+            </div>
+        </section>
+        <section class="trusted-by">
+            <img src="./assets/images/svg/Background/PurpleLeftGlow.svg" alt="Background purple glow"
+                class="trusted-by__background">
+            <div class="container">
+                <div class="trusted-by__row">
+
+                    <div class="trusted-by__info">
+                        <div class="trusted-by__title-wrapper">
+                            <h6 class="trusted-by__title">Trusted by</h6>
+                            <div class="dash purple"></div>
+                        </div>
+                        <div class="trusted-by__text">
+                            <p>
+                                Some of companies and startups working on the integration with us.
+                            </p>
+                        </div>
                     </div>
-                    <div class="trusted-by__text--content">
-                        <p>
-                            Some of companies and startups working on the integration with us.
-                        </p>
+                    <div class='trusted-by__companies'>
+                        <img src="./assets/images/svg/TrustedBy/Jarvis.svg" alt="Jarvis company logo"
+                            class="trusted-by__company trusted-by__jarvis">
+                        <img src="./assets/images/svg/TrustedBy/KickBack.svg" alt="KickBack company logo"
+                            class="trusted-by__company trusted-by__kickback">
+                        <img src="./assets/images/svg/TrustedBy/Deepit.svg" alt="Deepit company logo"
+                            class="trusted-by__company trusted-by__deepit">
+                        <img src="./assets/images/svg/TrustedBy/MEW@2x.png" alt="MyEtherWallet company logo"
+                            class="trusted-by__company trusted-by__mew">
+                        <img src="./assets/images/svg/TrustedBy/iExec.svg" alt="iExec company logo"
+                            class="trusted-by__company trusted-by__iexec">
                     </div>
                 </div>
-                <div class='trusted-by__companies'>
-                    <img src="./assets/images/svg/TrustedBy/Jarvis.svg" alt="Jarvis company logo"
-                        class="trusted-by__company">
-                    <img src="./assets/images/svg/TrustedBy/KickBack.svg" alt="KickBack company logo"
-                        class="trusted-by__company">
-                    <img src="./assets/images/svg/TrustedBy/Deepit.svg" alt="Deepit company logo"
-                        class="trusted-by__company">
-                    <img src="./assets/images/svg/TrustedBy/MEW@2x.png" alt="MyEtherWallet company logo"
-                        class="trusted-by__company">
-                    <img src="./assets/images/svg/TrustedBy/iExec.svg" alt="iExec company logo"
-                        class="trusted-by__company">
-                </div>
-                
-        </div>
-            </section>
+            </div>
+        </section>
 
         <section class="collection">
             <div class="container">
-                <div class="delimeter"></div>
-                <div class="collection__text">
-                    <h2 class="collection__text__title">A collection of the best tooling to make your blockchain app
+                <div class="collection__row">
+
+                    <div class="delimeter"></div>
+                    <h2 class="collection__title">A collection of the best tooling to make your blockchain app
                         onboarding smoother.</h2>
-                    <p class="collection__text__content">Build your app faster by not having to worry about key
-                        management, identity and onboarding. You can focus now on what makes your project special!</p>
-                </div>
-                <div class="collection__card">
-                    <img src="./assets/images/svg/Logo.svg" alt="UniLogin logo" class="collection__card__logo">
-                    <div class="collection__card__tab">
-                        <div class="collection__card__tab__left">
-                            <img src="./assets/images/svg/Collection/Avatar.svg" alt="User avatar"
-                                class="collection__card__tab__avatar">
-                            <p class="collection__card__tab__login">alex.unilogin.io</p>
+                    <p class="collection__text">Build your app faster by not having to worry about key
+                        management, identity and onboarding. You can focus now on what makes your project special!
+                    </p>
+                    <div class="collection__card">
+                        <img src="./assets/images/svg/Logo.svg" alt="UniLogin logo" class="collection__card_logo">
+                        <div class="collection__tab">
+                            <div class="collection__tab_left">
+                                <img src="./assets/images/svg/Collection/Avatar.svg" alt="User avatar"
+                                    class="collection__avatar">
+                                <p class="collection__login">alex.unilogin.io</p>
+                            </div>
+                            <p class="collection__money">$12.34</p>
                         </div>
-                        <p class="collection__card__tab__money">$12.34</p>
-                    </div>
-                    <div class="collection__card__background">
-                        <img src="./assets/images/svg/Background/CollectionUnderGlow.svg" alt="Card's glow"
-                            class="collection__card__background__glow">
-                        <div class="collection__card__background__circle--1"></div>
-                        <div class="collection__card__background__circle--2"></div>
-                        <div class="collection__card__background__circle--3"></div>
-                        <div class="collection__features">
-                            <div class="collection__features--1">
-                                <div class="collection__features--1__left">
-                                    <img src="./assets/images/svg/Collection/2fa.svg" alt="2fa authentication"
-                                        class="collection__features__img">
-                                    <h5 class="collection__features__title">2fa authentication</h5>
+                        <div class="collection__background">
+                            <img src="./assets/images/svg/Background/CollectionUnderGlow.svg" alt="Card's glow"
+                                class="collection__glow">
+                            <div class="collection__circle_1"></div>
+                            <div class="collection__circle_2"></div>
+                            <div class="collection__circle_3"></div>
+                            <div class="collection__features">
+                                <div class="collection__feature_1">
+                                    <div class="collection__feature_1_left">
+                                        <img src="./assets/images/svg/Collection/2fa.svg" alt="2fa authentication"
+                                            class="collection__feature_icon">
+                                        <h5 class="collection__feature_title">2fa authentication</h5>
+                                    </div>
+                                    <div class="collection__feature_1_right">
+                                        <img src="./assets/images/svg/Collection/EasyOnboarding.svg"
+                                            alt="Easy onboarding" class="collection__feature_icon">
+                                        <h5 class="collection__feature_title">Easy onboarding</h5>
+                                    </div>
                                 </div>
-                                <div class="collection__features--1__right">
-                                    <img src="./assets/images/svg/Collection/EasyOnboarding.svg" alt="Easy onboarding"
-                                        class="collection__features__img">
-                                    <h5 class="collection__features__title">Easy onboarding</h5>
+                                <div class="collection__feature_2">
+                                    <div class="collection__feature_2_left">
+                                        <img src="./assets/images/svg/Collection/ENS.svg" alt="ENS"
+                                            class="collection__feature_icon">
+                                        <h5 class="collection__feature_title">ENS</h5>
+                                    </div>
+                                    <div class="collection__feature_2_right">
+                                        <img src="./assets/images/svg/Collection/Etherless.svg"
+                                            alt="Etherless transactions" class="collection__feature_icon">
+                                        <h5 class="collection__feature_title">Etherless transactions</h5>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="collection__features--2">
-                                <div class="collection__features--2__left">
-                                    <img src="./assets/images/svg/Collection/ENS.svg" alt="ENS"
-                                        class="collection__features__img">
-                                    <h5 class="collection__features__title">ENS</h5>
-                                </div>
-                                <div class="collection__features--2__right">
-                                    <img src="./assets/images/svg/Collection/Etherless.svg" alt="Etherless transactions"
-                                        class="collection__features__img">
-                                    <h5 class="collection__features__title">Etherless transactions</h5>
-                                </div>
-                            </div>
-                            <div class="collection__features--3">
-                                <div class="collection__features--3__left">
-                                    <img src="./assets/images/svg/Collection/Identity.svg" alt="Identity"
-                                        class="collection__features__img">
-                                    <h5 class="collection__features__title">Identity</h5>
-                                </div>
-                                <div class="collection__features--3__right">
-                                    <img src="./assets/images/svg/Collection/EmailRecovery.svg" alt="Email recovery"
-                                        class="collection__features__img">
-                                    <h5 class="collection__features__title">Email recovery</h5>
+                                <div class="collection__feature_3">
+                                    <div class="collection__feature_3_left">
+                                        <img src="./assets/images/svg/Collection/Identity.svg" alt="Identity"
+                                            class="collection__feature_icon">
+                                        <h5 class="collection__feature_title">Identity</h5>
+                                    </div>
+                                    <div class="collection__feature_3_right">
+                                        <img src="./assets/images/svg/Collection/EmailRecovery.svg" alt="Email recovery"
+                                            class="collection__feature_icon">
+                                        <h5 class="collection__feature_title">Email recovery</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -177,42 +187,46 @@
         </section>
         <section class="windows">
             <div class="container">
+                <div class="windows__grid">
+                    <div class="windows__row">
+                        <div class="windows__left">
+                            <div class="delimeter"></div>
+                            <h2 class="windows__title">Create your account in seconds <b>with no downloads
+                                    required!</b</h2>
+                            <p class="windows__text">But this is not the normal
+                                    crypto account you grew up with! Every Unilogin account is a smart contract and open
+                                    standard for onboarding and login. Every account also comes with a ENS name, to make
+                                    integration simpler with the whole ecosystem.</p>
+                        </div>
+                        <div class="browser">
+                            <ul class="browser__navigation">
+                                <li class="browser__button"></li>
+                                <li class="browser__button"></li>
+                                <li class="browser__button"></li>
+                            </ul>
+                        </div>
 
-                <div class="windows__row">
-                    <div class="windows__row__content">
-                        <div class="delimeter"></div>
-                        <h2 class="windows__row__content__title">Create your account in seconds <b>with no downloads
-                                required!</b</h2> <p class="windows__row__content__text">But this is not the normal
-                                crypto account you grew up with! Every Unilogin account is a smart contract and open
-                                standard for onboarding and login. Every account also comes with a ENS name, to make
-                                integration simpler with the whole ecosystem.</p>
                     </div>
-                    <div class="windows__row__window">
-                        <ul class="windows__row__window__navigation">
-                            <li class="windows__row__window__navigation__button"></li>
-                            <li class="windows__row__window__navigation__button"></li>
-                            <li class="windows__row__window__navigation__button"></li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="windows__row">
-                    <div class="windows__row__content">
-                        <div class="delimeter"></div>
-                        <h2 class="windows__row__content__title">We find the <b>best onramp anywhere in the world.</b>
-                        </h2>
-                        <p class="windows__row__content__text">Crypto doesn’t have borders, but most of yours users
-                            still do. So we partner with over 20 different onramp providers to give you the best cover
-                            in 40 countries.</p>
-                    </div>
-                    <div class="windows__row__window">
-                        <ul class="windows__row__window__navigation">
-                            <li class="windows__row__window__navigation__button"></li>
-                            <li class="windows__row__window__navigation__button"></li>
-                            <li class="windows__row__window__navigation__button"></li>
-                        </ul>
-                        <img src="./assets/images/svg/Background/PurpleGlow.svg" alt="Window's glow"
-                            class="windows__row__window__glow">
+                    <div class="windows__row">
+                        <div class="windows__left">
+                            <div class="delimeter"></div>
+                            <h2 class="windows__title">We find the <b>best onramp anywhere in the
+                                    world.</b>
+                            </h2>
+                            <p class="windows__text">Crypto doesn’t have borders, but most of yours users
+                                still do. So we partner with over 20 different onramp providers to give you the best
+                                cover
+                                in 40 countries.</p>
+                        </div>
+                        <div class="browser">
+                            <ul class="browser__navigation">
+                                <li class="browser__button"></li>
+                                <li class="browser__button"></li>
+                                <li class="browser__button"></li>
+                            </ul>
+                            <img src="./assets/images/svg/Background/PurpleGlow.svg" alt="Window's glow"
+                                class="browser__glow">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -221,152 +235,154 @@
         <div class="section-delimeter"></div>
         <section class="start">
             <div class="container">
-                <div class="start__left">
-                    <div class="start__card">
-                        <div class="start__card__number">
-                            <h6 class="">01</h6>
+                <div class="start__row">
+                    <div class="start__card start__theme_purple">
+                        <div class="start__card_top">
+                            <h6 class="start__card_number">01</h6>
                             <div class="dash"></div>
                         </div>
-                        <h3 class="start__card__title">Fast and easy: <b>Use an existing provider</b></h3>
-                        <p class="start__card__text">Your users can use any existing UniLogin provider to access your
+                        <h3 class="start__card_title">Fast and easy: <b>Use an existing provider</b></h3>
+                        <p class="start__card_text">Your users can use any existing UniLogin provider to access your
                             app. Just add one line of code!</p>
-                        <form action="" class="start__card__picker">
-                            <label for="providerPicker" class="start__card__picker__label">Pick your provider:</label>
-                            <select type="select" id="providerPicker" type="text" class="start__card__picker__select">
+                        <form action="" class="start__picker">
+                            <label for="providerPicker" class="start__label">Pick your provider:</label>
+                            <select type="select" id="providerPicker" type="text" class="start__select">
                                 <option value="value1">unilogin.io</option>
                                 <option value="value2">Variant - 2</option>
                             </select>
-                            <div class="start__card__picker__code">scriptscrfnsklfnksmfmslmm</div>
+                            <div class="start__code">scriptscrfnsklfnksmfmslmm</div>
                         </form>
-                        <a href="#" class="start__card__link">Link to lorem ipsum</a>
+                        <a href="#" class="start__link">Link to lorem ipsum</a>
                     </div>
-                </div>
-                <div class="start__right">
-                    <div class="start__right__cta">
-                        <h2 class="start__right__cta__title">Start developing now!</h2>
-                        <p class="start__right__cta__text">Two ways to integrate in your ethereum app.</p>
+                    <div class="start__cta">
+                        <h2 class="start__cta_title">Start developing now!</h2>
+                        <p class="start__cta_text">Two ways to integrate in your ethereum app.</p>
                     </div>
-                    <div class="start__card">
-                        <div class="start__card__number">
-                            <h6 class="">02</h6>
+                    <div class="start__card start__theme_turquoise">
+                        <div class="start__card_top">
+                            <h6 class="start__card_number">02</h6>
                             <div class="dash"></div>
                         </div>
-                        <h3 class="start__card__title">Advanced and powerful:<b> Build your own provider</b></h3>
-                        <p class="start__card__text">If your app is a wallet or has lorem ipsum you can build your own
+                        <h3 class="start__card_title">Advanced and powerful:<b> Build your own provider</b></h3>
+                        <p class="start__card_text">If your app is a wallet or has lorem ipsum you can build your own
                             Unilogin provider.</p>
-                        <a href="#" class="start__card__link">Read the document</a>
+                        <a href="#" class="start__link">Read the document</a>
                     </div>
                 </div>
         </section>
         <section class="who">
-            <img src="./assets/images/svg/Background/LogoOutline.svg" alt="UniLogin logo"
-                class="who__content__background-logo">
-                <div class="container">
-                    <div class="delimeter"></div>
-                </div>
+            <img src="./assets/images/svg/Background/LogoOutline.svg" alt="UniLogin logo" class="who__background">
             <div class="container">
-                <div class="who__content">
-                    <h3 class="who__content__title">Who?</h3>
-                    <p class="who__content__text">Universal Login was built by crypto natives. and awesome engineers,
-                        designers and communicators.</p>
-                </div>
-                <div class="who__team">
-                    <div class="who__team__founders">
-                        <div class="who__person">
-                            <div class="who__person__image">
-                                <img src="./assets/images/png/Team/Alex_Van_de_Sande.png" alt="Alan Van de Sande"
-                                    class="who__person__photo">
-                                <div class="who__person__filter"></div>
-                                <ul class="who__person__links">
-                                    <li class="who__person__links--github social__link">
-                                        <a href="#">
-                                            <button>
-                                                <img src="./assets/images/svg/SocialLinks/Github.svg" alt="Github icon">
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li class="who__person__links--twitter social__link">
-                                        <a href="#">
-                                            <img src="./assets/images/svg/SocialLinks/Medium.svg" alt="Github icon">
-                                        </a>
-                                    </li>
-                                    <li class="who__person__links--media social__link">
-                                        <a href="#">
-                                            <img src="./assets/images/svg/SocialLinks/Twitter.svg" alt="Github icon">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h5 class="who__person__name">Alex Van de Sande</h5>
-                            <p class="who__person__role">Founder</p>
+                <div class="delimeter"></div>
+            </div>
+            <div class="container">
+                <div class="who__row">
 
-                        </div>
-                        <div class="who__person">
-                            <div class="who__person__image">
-                                <img src="./assets/images/png/Team/Marek_Kirejczyk.png" alt="Marek Kirejczyk"
-                                    class="who__person__photo">
-                                <div class="who__person__filter"></div>
-                                <ul class="who__person__links">
-                                    <li class="who__person__links--github social__link">
-                                        <a href="#">
-                                            <button>
-                                                <img src="./assets/images/svg/SocialLinks/Github.svg" alt="Github icon">
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li class="who__person__links--twitter social__link">
-                                        <a href="#">
-                                            <img src="./assets/images/svg/SocialLinks/Medium.svg" alt="Github icon">
-                                        </a>
-                                    </li>
-                                    <li class="who__person__links--media social__link">
-                                        <a href="#">
-                                            <img src="./assets/images/svg/SocialLinks/Twitter.svg" alt="Github icon">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h5 class="who__person__name">Marek Kirejczyk</h5>
-                            <p class="who__person__role">Founder</p>
-
-                        </div>
+                    <div class="who__left">
+                        <h3 class="who__title">Who?</h3>
+                        <p class="who__text">Universal Login was built by crypto natives. and awesome
+                            engineers,
+                            designers and communicators.</p>
                     </div>
-                    <div class="who__team__members">
-                        <div class="who__person">
-                            <div class="who__person__image">
-                                <img src="./assets/images/png/Team/Justyna.png" alt="Justyna"
-                                    class="who__person__photo">
-                                <div class="who__person__filter"></div>
+                    <div class="team">
+                        <div class="team__founders">
+                            <div class="person">
+                                <div class="person__avatar">
+                                    <img src="./assets/images/png/Team/Alex_Van_de_Sande.png" alt="Alan Van de Sande"
+                                        class="person__photo">
+                                    <div class="person__filter"></div>
+                                    <ul class="person__links">
+                                        <li class="person__links_github social__link">
+                                            <a href="#">
+                                                <button>
+                                                    <img src="./assets/images/svg/SocialLinks/Github.svg"
+                                                        alt="Github icon">
+                                                </button>
+                                            </a>
+                                        </li>
+                                        <li class="person__links_twitter social__link">
+                                            <a href="#">
+                                                <img src="./assets/images/svg/SocialLinks/Medium.svg" alt="Github icon">
+                                            </a>
+                                        </li>
+                                        <li class="person__links_media social__link">
+                                            <a href="#">
+                                                <img src="./assets/images/svg/SocialLinks/Twitter.svg"
+                                                    alt="Github icon">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h5 class="person__name">Alex Van de Sande</h5>
+                                <p class="person__role">Founder</p>
+
                             </div>
-                            <h5 class="who__person__name">Justyna</h5>
-                            <p class="who__person__role">Software developer</p>
+                            <div class="person">
+                                <div class="person__avatar">
+                                    <img src="./assets/images/png/Team/Marek_Kirejczyk.png" alt="Marek Kirejczyk"
+                                        class="person__photo">
+                                    <div class="person__filter"></div>
+                                    <ul class="person__links">
+                                        <li class="person__links_github social__link">
+                                            <a href="#">
+                                                <button>
+                                                    <img src="./assets/images/svg/SocialLinks/Github.svg"
+                                                        alt="Github icon">
+                                                </button>
+                                            </a>
+                                        </li>
+                                        <li class="person__links_twitter social__link">
+                                            <a href="#">
+                                                <img src="./assets/images/svg/SocialLinks/Medium.svg" alt="Github icon">
+                                            </a>
+                                        </li>
+                                        <li class="person__links_media social__link">
+                                            <a href="#">
+                                                <img src="./assets/images/svg/SocialLinks/Twitter.svg"
+                                                    alt="Github icon">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h5 class="person__name">Marek Kirejczyk</h5>
+                                <p class="person__role">Founder</p>
+
+                            </div>
                         </div>
-                        <div class="who__person">
-                            <div class="who__person__image">
-                                <img src="./assets/images/png/Team/Jaroslaw.png" alt="Jaroslaw"
-                                    class="who__person__photo">
-                                <div class="who__person__filter"></div>
+                        <div class="team__members">
+                            <div class="person">
+                                <div class="person__avatar">
+                                    <img src="./assets/images/png/Team/Justyna.png" alt="Justyna" class="person__photo">
+                                    <div class="person__filter"></div>
+                                </div>
+                                <h5 class="person__name">Justyna</h5>
+                                <p class="person__role">Software developer</p>
                             </div>
-                            <h5 class="who__person__name">Jaroslaw</h5>
-                            <p class="who__person__role">Software developer</p>
-                        </div>
-                        <div class="who__person">
-                            <div class="who__person__image">
-                                <img src="./assets/images/png/Team/Natalia.png" alt="Natalia"
-                                    class="who__person__photo">
-                                <div class="who__person__filter"></div>
+                            <div class="person">
+                                <div class="person__avatar">
+                                    <img src="./assets/images/png/Team/Jaroslaw.png" alt="Jaroslaw"
+                                        class="person__photo">
+                                    <div class="person__filter"></div>
+                                </div>
+                                <h5 class="person__name">Jaroslaw</h5>
+                                <p class="person__role">Software developer</p>
                             </div>
-                            <h5 class="who__person__name">Natalia</h5>
-                            <p class="who__person__role">UI and UX Designer</p>
-                        </div>
-                        <div class="who__person">
-                            <div class="who__person__image">
-                                <img src="./assets/images/png/Team/Brantly.png" alt="Brantly"
-                                    class="who__person__photo">
-                                <div class="who__person__filter"></div>
+                            <div class="person">
+                                <div class="person__avatar">
+                                    <img src="./assets/images/png/Team/Natalia.png" alt="Natalia" class="person__photo">
+                                    <div class="person__filter"></div>
+                                </div>
+                                <h5 class="person__name">Natalia</h5>
+                                <p class="person__role">UI and UX Designer</p>
                             </div>
-                            <h5 class="who__person__name">Brantly</h5>
-                            <p class="who__person__role">Developer relations</p>
+                            <div class="person">
+                                <div class="person__avatar">
+                                    <img src="./assets/images/png/Team/Brantly.png" alt="Brantly" class="person__photo">
+                                    <div class="person__filter"></div>
+                                </div>
+                                <h5 class="person__name">Brantly</h5>
+                                <p class="person__role">Developer relations</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -376,10 +392,12 @@
 
     <footer class="footer">
         <div class="container">
-            <img src="./assets/images/svg/LogoTitle.svg" alt="UniLogin logo" class="footer__logo">
-            <div class="footer__content">
-                <p class="footer__content__copyright">© 2019 UniLogin</p>
-                <a href="#" class="footer__content__press-kit">Press Kit</a>
+            <div class="footer__row">
+                <img src="./assets/images/svg/LogoTitle.svg" alt="UniLogin logo" class="footer__logo">
+                <div class="footer__content">
+                    <p class="copyright">© 2019 UniLogin</p>
+                    <a href="#" class="footer__content_press-kit">Press Kit</a>
+                </div>
             </div>
         </div>
     </footer>

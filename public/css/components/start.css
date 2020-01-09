@@ -1,108 +1,116 @@
-.start {
-    & > .container {
-        padding-top: 14rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: 3.3rem;
-        margin-bottom: 14rem;
-    }
-
-    &__left {
-        & > .start__card {
-            background-color: #FBF7FF;
-            color: #7123AD;
-        }
-    }
-
-    &__right {
-        grid-row: 0 / 1;
-        & > .start__card {
-            background-color: #EDFDFE;
-            color: #13778C;
-        }
-
-        &__cta {
-            display: flex;
-            flex-direction: column;
-            padding-left: 9.6rem;
-            margin-bottom: 10rem;
-
-            &__title {
-                font-size: 5.6rem;
-                line-height: 7.2rem;
-            }
-            &__text {
-                font-size: 1.8rem;
-                line-height: 3.2rem;
-                color: var(--color-text-second);
-            }
-        }
-
-    }
-
-    &__card {
-        border-radius: 1.6rem;
-        display: flex;
-        flex-direction: column;
-        padding: 5.6rem 9.6rem;
-        border-radius: 1.6rem;
-
-        &__number {
-            display: flex;
-            align-items: center;
-
-            & > h6 {
-                font-weight: bold;
-                font-size: 1.7rem;
-                line-height: 5.6rem;
-            }
-        }
-
-        &__title {
-            font-size: 4rem;
-        }
-
-        &__text {
-            color: var(--color-text-second);
-            font-size: 1.8rem;
-            line-height: 3.2rem;
-            margin: 3.6rem 0;
-        }
-
-        &__picker {
-            &__label {
-                font-size: 1.8rem;
-                color: var(--color-text-second);
-                line-height: 3.2rem;
-                font-weight: normal;
-                font-style: normal;
-                font-family: "HelveticaNeue"
-            }
-
-            &__select {
-                margin-bottom: 1.6rem;
-            }
-
-            &__code {
-                display: flex;
-                align-items: center;
-                height: 5.6rem;
-                background-color: #F3EBFB;
-                padding-left: 1.6rem;
-                font-size: 1.5rem;
-                border-radius: 1.3rem;
-                margin-bottom: 4rem;
-            }
-        }
-
-        & > a {
-            color: inherit;
-        }
-    }
+.start__row {
+    padding-top: 14rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-column-gap: 3.3rem;
+    margin-bottom: 14rem;
 }
 
-@media only screen and (min-width: 200px) {
+.start__row > :first-child {
+    grid-row: 1 / -1;
+}
+
+.start__row > .start__cta {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.start__row > :last-child {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.start__theme_purple {
+    background-color: #FBF7FF;
+    color: #7123AD;
+}
+
+.start__theme_turquoise {
+    background-color: #EDFDFE;
+    color: #13778C;
+}
+
+.start__card {
+    border-radius: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    padding: 5.6rem 9.6rem;
+    border-radius: 1.6rem;
+}
+
+.start__link {
+    color: inherit;
+}
+
+.start__code {
+    display: flex;
+    align-items: center;
+    height: 5.6rem;
+    background-color: #F3EBFB;
+    color: var(--color-text-second);
+    padding-left: 1.6rem;
+    font-size: 1.5rem;
+    border-radius: 1.3rem;
+    margin-bottom: 4rem;
+}
+
+.start__select {
+    margin-top: 1.7rem;
+    margin-bottom: 1.6rem;
+}
+
+.start__label {
+    font-size: 1.8rem;
+    color: var(--color-text-second);
+    line-height: 3.2rem;
+    font-weight: normal;
+    font-style: normal;
+    font-family: "HelveticaNeue";
+}
+
+.start__cta {
+    display: flex;
+    flex-direction: column;
+    padding-left: 9.6rem;
+    margin-bottom: 10rem;
+}
+
+.start__cta_title {
+    font-size: 5.6rem;
+    line-height: 7.2rem;
+}
+
+.start__cta_text {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    color: var(--color-text-second);
+}
+
+.start__card_top {
+    display: flex;
+    align-items: center;
+}
+
+.start__card_number {
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 5.6rem;
+    color: var(--color-text-main);
+}
+
+.start__card_title {
+    font-size: 4rem;
+}
+
+.start__card_text {
+    color: var(--color-text-second);
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    margin: 3.6rem 0;
+}
+
+@media only screen and (min-width: 320px) {
     .start > .container {
         grid-template-columns: 1fr;
     }
