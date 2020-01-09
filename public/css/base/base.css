@@ -11,9 +11,6 @@ html {
     -webkit-font-smooth: antialiased;
 }
 
-header {
-}
-
 main {
     position: relative;
     overflow: hidden;
@@ -33,7 +30,6 @@ input {
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;       /* Remove default arrow */
     background-color: #fff;
     min-width: 100%;
     height: 5.6rem;
@@ -43,5 +39,4 @@ select {
     font-size: 1.5rem;
     border: none;
     font-weight: bold;
-    /* font-family: "HelveticaNeue"; */
 }
