@@ -26,6 +26,7 @@
 .who__background {
     position: absolute;
     top: 0;
+    height: 100%;
 }
 
 .team {
@@ -62,6 +63,11 @@
 .person__avatar:hover .person__links{
     display: flex;
     opacity: 1;
+}
+
+.person__avatar:hover .person__filter {
+    background: linear-gradient(90.57deg, #00D6D9 0%, #455CDA 57.81%, #D55DFF 100%);
+    opacity: 0.5;
 }
 
 .person__photo {
@@ -103,7 +109,51 @@
     margin-right: .8rem;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 1040px) {
+    .who .delimeter {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .who__row {
+        grid-template-columns: 1fr;
+    }
+
+    .who__left {
+        text-align: center;
+    }
+
+    .team__founders {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .team__members {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .team__members > .person {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .team__founders {
+        margin-bottom: 2.8rem;
+    }
+
+    .team__members > .person:not(:last-child) {
+        margin-top: 2.8rem;
+        margin-right: 0;
+    }
+}
+
+/* @media only screen and (min-width: 320px) {
     .who__row {
         display: flex;
         flex-direction: column;
@@ -133,9 +183,9 @@
         grid-row-gap: 2.8rem;
         justify-content: center;
     }
-}
+} */
 
-@media only screen and (min-width: 800px) {
+/* @media only screen and (min-width: 800px) {
     .who__left {
         display: flex;
         flex-direction: column;
@@ -174,4 +224,4 @@
     .team__members {
         justify-content: flex-start;
     }
-}
+} */

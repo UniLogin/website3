@@ -23,13 +23,13 @@
 }
 
 .collection__card {
-    width: 36.2rem;
-    height: 27.4rem;
+    /* width: 36.2rem; */
+    /* height: 27.4rem; */
     background: linear-gradient(129.62deg, #DFF4FA 1.15%, #C8EEF8 99.33%);
     box-shadow: 0px 24px 104px rgba(0, 131, 188, 0.1);
     border-radius: 1.6rem;
     position: relative;
-    padding: 4.5rem;
+    /* padding:  4.5rem 16rem 19rem; */
     margin-top: 16.2rem;
     margin-bottom: 29.2rem;
 }
@@ -37,6 +37,7 @@
 .collection__card_logo {
     width: 4.5rem;
     height: 4.5rem;
+    margin: 4.5rem 16rem 19rem;
 }
 
 .collection__tab {
@@ -45,12 +46,12 @@
     padding: 1.8rem 2.4rem;
     border-radius: 1.3rem;
     position: absolute;
-    width: 100%;
+    width: 105%;
     display: flex;
     justify-content: space-between;
     text-align: left;
     bottom: 7rem;
-    left: -5.0rem;
+    left: -13.24%;
 }
 
 .collection__tab_left {
@@ -65,7 +66,8 @@
 .collection__login {
     margin-left: 1.6rem;
     font-size: 1.8rem;
-    font-family: "HelveticaNeueMedium";
+    font-family: "HelveticaNeue";
+    font-weight: 500;
     color: var(--color-title);
 }
 
@@ -73,7 +75,7 @@
     font-size: 1.6rem;
     font-family: "HelveticaNeue";
     color: var(--color-text-second);
-    font-weight: 600;
+    font-weight: normal;
 }
 
 .collection__features {
@@ -95,54 +97,6 @@
     z-index: 1000;
 }
 
-/* .collection__feature_icon {
-} */
-
-.collection__feature_1 {
-    position: absolute;
-    top: 20rem;
-    width: 100%;
-}
-
-.collection__feature_2 {
-    width: 100%;
-}
-
-.collection__feature_3 {
-    position: absolute;
-    bottom: 20rem;
-    width: 100%;
-}
-
-.collection__feature_1_left {
-    position: absolute;
-    left: -5.5rem;
-}
-
-.collection__feature_2_left {
-    position: absolute;
-    left: -4rem;
-}
-
-.collection__feature_3_left {
-    position: absolute;
-    left: 3rem;    
-}
-
-.collection__feature_1_right {
-    position: absolute;
-    right: -5rem;
-}
-
-.collection__feature_2_right {
-    position: absolute;
-    right: -9rem;
-}
-
-.collection__feature_3_right {
-    position: absolute;
-    right: 0;
-}
 
 .collection__background {
     position: absolute;
@@ -152,13 +106,61 @@
     height: 76.1rem;
 }
 
+.collection__feature_2fa {
+    position: absolute;
+    left: 3rem;
+    top: 24%;
+    transform: translateX(-50%);
+}
+
+.collection__feature_ens {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -35%);
+}
+
+.collection__feature_identity {
+    position: absolute;
+    left: 4rem;
+    bottom: 18%;
+    transform: translateX(-50%);
+}
+
+.collection__feature_eo {
+    position: absolute;
+    right: -10rem;
+    top: 22%;
+    transform: translateX(-50%);
+}
+
+.collection__feature_eo > .collection__feature_title {
+    margin-top: .6rem;
+}
+
+.collection__feature_et {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -40%);
+}
+
+.collection__feature_er {
+    position: absolute;
+    right: -7rem;
+    bottom: 18%;
+    transform: translateX(-50%);
+}
+
 .collection__circle_1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 37.3rem;
-    height: 37.3rem;
+    width: 50%;
+    height: 50%;
+    /* width: 37.3rem;
+    height: 37.3rem; */
     border: 1px solid #E0F1F6;
     border-radius: 50%;
     z-index: -300;
@@ -178,11 +180,13 @@
 }
 
 .collection__circle_3 {
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    transform: translate(-50%, -50%);
     opacity: .8;
     border: 1px solid #E0F1F6;
     z-index: -300;
@@ -193,13 +197,148 @@
     bottom: 0;
     left: 0;
     z-index: -1000;
+    bottom: -20%;
 }
 
+@media only screen and (max-width: 1044px) {
+    .collection__background {
+        width: 59.7rem;
+        height: 59.7rem;
+    }
 
-@media only screen and (min-width: 320px) {
+    .collection__text {
+        padding: 0;
+    }
 
+    .collection__features {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .collection__background {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -400;
+    }
+
+    .collection__feature_2fa {
+        position: absolute;
+        left: 3.5rem;
+        top: 15%;
+        transform: translateX(-50%);
+    }
+    
+    .collection__feature_identity {
+        position: absolute;
+        left: 4rem;
+        bottom: 10%;
+        transform: translateX(-50%);
+    }
+
+    .collection__feature_et {
+        right: 1.5rem;
+    }
+    
+    .collection__feature_eo {
+        position: absolute;
+        right: -8rem;
+        top: 14%;
+        transform: translateX(-50%);
+    }
+    
+    .collection__feature_er {
+        position: absolute;
+        right: -5.5rem;
+        bottom: 10%;
+        transform: translateX(-50%);
+    }
 }
 
-@media only screen and (min-width: 1012px) {
+@media only screen and (max-width: 768px) {
+    .collection__circle_1 {
+        width: 50vw;
+        height: 50vw;
+    }
 
+    .collection__circle_2 {
+        width: 75vw;
+        height: 75vw;
+    }
+
+    .collection__circle_3 {
+        width: 100vw;
+        height: 100vw;
+    }
+
+
+    .collection__card {
+        margin-bottom: 74.7rem;
+    }
+    
+    .collection__features {
+        display: flex;
+        top: 25rem;
+        transform: translateY(50%);
+    }
+
+    .collection__feature_2fa {
+        top: unset;
+        bottom: unset;
+        left: unset;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+    }
+    
+    .collection__feature_ens {
+        top: unset;
+        bottom: unset;
+        left: unset;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10rem;
+    }
+    
+    .collection__feature_identity {
+        top: unset;
+        bottom: unset;
+        left: unset;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20rem;
+    }
+    
+    .collection__feature_eo {
+        top: unset;
+        bottom: unset;
+        left: unset;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30rem;
+    }
+    
+    .collection__feature_et {
+        top: unset;
+        bottom: unset;
+        left: unset;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 40rem;
+    }
+    
+    .collection__feature_er {
+        top: unset;
+        bottom: unset;
+        left: unset;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50rem;
+    }
 }

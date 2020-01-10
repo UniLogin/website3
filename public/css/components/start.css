@@ -9,6 +9,7 @@
 
 .start__row > :first-child {
     grid-row: 1 / -1;
+    margin-bottom: 10.4rem;
 }
 
 .start__row > .start__cta {
@@ -43,6 +44,22 @@
     color: inherit;
 }
 
+.start__select {
+    margin-top: 1.7rem;
+    margin-bottom: 1.6rem;
+}
+
+.start__select_wrapper {
+    position: relative;
+}
+
+.start__select_icon {
+    position: absolute;
+    top: 50%;
+    right: 1.6rem;
+    transform: translateY(-50%);
+}
+
 .start__code {
     display: flex;
     align-items: center;
@@ -53,11 +70,6 @@
     font-size: 1.5rem;
     border-radius: 1.3rem;
     margin-bottom: 4rem;
-}
-
-.start__select {
-    margin-top: 1.7rem;
-    margin-bottom: 1.6rem;
 }
 
 .start__label {
@@ -79,6 +91,7 @@
 .start__cta_title {
     font-size: 5.6rem;
     line-height: 7.2rem;
+    margin-bottom: 1.3rem;
 }
 
 .start__cta_text {
@@ -90,12 +103,12 @@
 .start__card_top {
     display: flex;
     align-items: center;
+    margin-bottom: 4.5rem;
 }
 
 .start__card_number {
     font-weight: bold;
     font-size: 1.7rem;
-    line-height: 5.6rem;
     color: var(--color-text-main);
 }
 
@@ -110,18 +123,63 @@
     margin: 3.6rem 0;
 }
 
-@media only screen and (min-width: 320px) {
-    .start > .container {
+@media only screen and (max-width: 1024px) {
+    .start__row {
         grid-template-columns: 1fr;
+        grid-row-gap: 1.6rem;
+        margin-bottom: 6.7rem;
+    }
+
+    .start__card_title {
+        font-size: 3.8rem;
+    }
+
+    .start__row > .start__cta {
+        grid-row: unset;
+        grid-row: 1 / 2;
+        grid-column: unset;
+        padding-left: 0;
+        margin-bottom: 7.5rem;
+        font-size: 4.8rem;
+    }
+    
+    .start__row > .start__card_1 {
+        grid-row: unset;
+        grid-column: 1 / 2;
+        margin-bottom: 0;
+    }
+
+    .start__row > .start__card_2 {
+        grid-row: unset;
+        grid-column: 1 / 2;
     }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (max-width: 320px) {
+    .start__row {
+        padding-top: 6.0rem;
+    }
 
-}
+    .start__card {
+        padding: 1.6rem 0;
+        padding-bottom: 1.6rem;
+    }
 
-@media only screen and (min-width: 900px) {
-    .start > .container {
-        grid-template-columns: 1fr 1fr;
+    .start__card_title {
+        font-size: 2.8rem;
+    }
+
+    .start__row > .start__cta {
+        margin-bottom: 5.8rem;
+    }
+
+    .start__cta_title {
+        font-size: 3.6rem;
+        line-height: 4.6rem;
+    }
+
+    .start__card_text {
+        margin: 0;
+        margin: 2.3rem 0;
     }
 }

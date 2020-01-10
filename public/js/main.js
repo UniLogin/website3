@@ -1,5 +1,5 @@
 (() => {
-    let providerSelect = document.getElementById("providerPicker");
+    let providerSelect = document.getElementById("providerSelect");
     let providerOutput = document.getElementById("providerOutput");
     providerSelect.onchange = () => {
         providerOutput.innerText = providerSelect.value;
