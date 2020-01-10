@@ -1,18 +1,19 @@
-.header {
+.header__row {
     padding-top: 3.6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+}
 
-    @media only screen and (min-width: 200px) {
+@media only screen and (min-width: 320px) {
+    .header__row {
         padding-top: 1.6rem;
     }
+}
 
-    @media only screen and (min-width: 320px) {
+@media only screen and (min-width: 600px) {
+    .header__row {
         padding-top: 3.6rem;
-    }
-
-    @media only screen and (min-width: 1200px) {
     }
 }

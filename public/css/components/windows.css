@@ -1,71 +1,125 @@
 .windows {
+    margin-bottom: 14.1rem;
+}
+
+.windows__grid {
     display: grid;
     grid-row-gap: 15.6rem;
-    margin-bottom: 14.1rem;
+}
 
-    &__row {
+.windows__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12.7rem;
+}
+
+.windows__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.windows__title {
+    font-size: 4rem;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 5.6rem;
+}
+
+.windows__text {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    color: var(--color-text-second);
+    font-family: "HelveticaNeue";
+    font-weight: 300;
+}
+
+.browser {
+    height: 46rem;
+    box-shadow: 0px 24px 104px rgba(0, 131, 188, 0.1);
+    border-radius: 1.6rem;
+    position: relative;
+}
+
+.browser__navigation {
+    width: 100%;
+    height: 2.8rem;
+    background: linear-gradient(175.52deg, #DFF4FA 1.15%, #C8EEF8 99.33%);
+    opacity: 0.8;
+    border-top-left-radius: 1.6rem;
+    border-top-right-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1.9rem;
+}
+
+.browser__button {
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: .9rem;
+}
+
+.browser__button:last-child {
+    margin-right: 0;
+}
+
+.browser__glow {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    z-index: -1000;
+}
+
+@media only screen and (min-width: 320px) {
+    .windows__grid {
         display: grid;
+        grid-row-gap: 7.6rem;
+        text-align: center;
+    }
+
+    .windows__row {
+        grid-template-columns: 1fr;
+        grid-row-gap: 3.4rem;
+        grid-template-rows: min-content min-content;
+    }
+
+    .windows__left {
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 770px) {
+    .windows__grid {
+        display: grid;
+        grid-row-gap: 9.9rem;
+    }
+
+    .windows__row {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-rows: min-content min-content;
+        grid-row-gap: 7.7rem;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .windows__grid {
+        display: grid;
+        grid-row-gap: 15.6rem;
+        text-align: left;
+    }
+
+    .windows__row {
         grid-template-columns: 1fr 1fr;
-        grid-gap: 12.7rem;
-
-        &__content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-
-            &__title {
-                font-size: 4rem;
-                font-weight: normal;
-                font-style: normal;
-                line-height: 5.6rem;
-            }
-
-            &__text {
-                font-size: 1.8rem;
-                line-height: 3.2rem;
-                color: var(--color-text-second);
-                font-family: "HelveticaNeue";
-                font-weight: normal;
-            }
-        }
-
-        &__window {
-            height: 46rem;
-            box-shadow: 0px 24px 104px rgba(0, 131, 188, 0.1);
-            border-radius: 1.6rem;
-            position: relative;
-
-            &__glow {
-                position: absolute;
-                height: 100%;
-                top: 0;
-                left: 100%;
-            }
-
-            &__navigation {
-                width: 100%;
-                height: 2.8rem;
-                background: linear-gradient(175.52deg, #DFF4FA 1.15%, #C8EEF8 99.33%);
-                opacity: 0.8;
-                border-top-left-radius: 1.6rem;
-                border-top-right-radius: 1.6rem;
-                display: flex;
-                align-items: center;
-                padding-left: 1.9rem;
-
-                &__button {
-                    width: 1rem;
-                    height: 1rem;
-                    background-color: #fff;
-                    border-radius: 50%;
-                    margin-right: .9rem;
-                    
-                    &:last-child {
-                        margin-right: 0;
-                    }
-                }
-            }
-        }
+        grid-template-rows: 1fr;
+        grid-row-gap: 0;
+    }
+    .windows__left {
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 }

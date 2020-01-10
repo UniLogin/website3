@@ -3,7 +3,6 @@
 @import "./typography.css";
 @import "./utils.css";
 @import "./variables.css";
-@import "../components/navbar.css";
 @import "../components/header.css";
 @import "../components/footer.css";
 @import "../components/social_buttons.css";
@@ -13,6 +12,7 @@
 @import "../components/collection.css";
 @import "../components/windows.css";
 @import "../components/start.css";
+@import "../components/who.css";
 
 @import "../components/background/background-logo.css";
 @import "../components/background/green-top-glow.css";
