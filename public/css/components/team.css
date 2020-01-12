@@ -1,35 +1,32 @@
-.who {
+.team {
     background-color: #F4FAFC;
     padding-top: 9.4rem;
     padding-bottom: 12.8rem;
     position: relative;
+    background-image: url("../../assets/images/svg/Background/LogoOutline.svg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 }
 
-.who__row {
+.team__row {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 3.3fr;
     grid-gap: 13rem;
 }
 
-.who__title {
+.team__title {
     margin-bottom: 2.4rem;
     font-size: 4rem;
     font-weight: normal;
 }
 
-.who__text {
+.team__text {
     font-size: 1.8rem;
     color: var(--color-text-second);
 }
 
-.who__background {
-    position: absolute;
-    top: 0;
-    height: 100%;
-}
-
-.team {
+.team__wrapper {
     display: flex;
     flex-direction: column;
 }
@@ -65,7 +62,7 @@
     opacity: 1;
 }
 
-.person__avatar:hover .person__filter {
+.team__founders .person__avatar:hover .person__filter {
     background: linear-gradient(90.57deg, #00D6D9 0%, #455CDA 57.81%, #D55DFF 100%);
     opacity: 0.5;
 }
@@ -82,7 +79,6 @@
     height: 70%;
     background-color: #DAE7FF;
     mix-blend-mode: color;
-
 }
 
 .person__name {
@@ -97,12 +93,12 @@
 
 .person__links {
     position: absolute;
+    display: flex;
     top: 9rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
+    transition: all .5s;
     opacity: 0;
-    transition: all 5s;
 }
 
 .person__links > :not(:last-child) {
@@ -110,16 +106,16 @@
 }
 
 @media only screen and (max-width: 1040px) {
-    .who .delimeter {
+    .team .delimeter {
         margin-left: auto;
         margin-right: auto;
     }
 
-    .who__row {
+    .team__row {
         grid-template-columns: 1fr;
     }
 
-    .who__left {
+    .team__left {
         text-align: center;
     }
 
@@ -129,6 +125,23 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .team {
+        padding-top: 6.2rem;
+        padding-bottom: 3.9rem;
+    }
+
+    .team .delimeter {
+        margin-bottom: 4rem;
+    }
+
+    .team__row {
+        grid-gap: 4rem
+    }
+
+    .team__text {
+        padding: 0 2rem;
+    }
+
     .team__members {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -144,84 +157,45 @@
     }
 
     .team__founders {
-        margin-bottom: 2.8rem;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 8rem;
+        margin-bottom: 9.6rem;
+        justify-content: center;
+    }
+
+    .team__members {
+        grid-row-gap: 2.8rem;
+    }
+
+    .team__founders > .person:not(:last-child) {
+        margin-right: 0;
     }
 
     .team__members > .person:not(:last-child) {
-        margin-top: 2.8rem;
+        margin-top: 0;
         margin-right: 0;
     }
-}
 
-/* @media only screen and (min-width: 320px) {
-    .who__row {
+    .team__members > .person:last-child {
+        margin-top: 0;
+    }
+
+    .team {
+        background-image: unset;
+    }
+
+    .person__links {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        opacity: 1;
+        top: unset;
+        bottom: unset;
+        bottom: -6.0rem;
+        left: 6.3rem;
     }
 
-    .who__left {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .team__founders {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .team__founders > .who__person:not(:last-child) {
-        margin-bottom: 3.6rem;
-    }
-
-    .team__members {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 2.8rem;
-        justify-content: center;
-    }
-} */
-
-/* @media only screen and (min-width: 800px) {
-    .who__left {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .team__founders {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .team__founders > .who__person:not(:last-child) {
-        margin-bottom: 0;
-    }
-
-    .team__members {
-        display: flex;
+    .team__founders .person__avatar:hover .person__filter {
+        background: #DAE7FF;
+        opacity: unset;
     }
 }
-
-@media only screen and (min-width: 1100px) {
-    .who__row {
-        display: grid;
-        align-items: flex-start;
-    }
-
-    .who__left {
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-
-    .team__founders {
-        justify-content: flex-start;
-    }
-    
-    .team__members {
-        justify-content: flex-start;
-    }
-} */
