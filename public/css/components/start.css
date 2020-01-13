@@ -36,7 +36,7 @@
     border-radius: 1.6rem;
     display: flex;
     flex-direction: column;
-    padding: 5.6rem 9.6rem;
+    padding: 6.4rem 9.3rem;
     border-radius: 1.6rem;
 }
 
@@ -130,6 +130,10 @@
         margin-bottom: 6.7rem;
     }
 
+    .start__card {
+        padding: 5.6rem 6.4rem;
+    }
+
     .start__card_title {
         font-size: 3.8rem;
     }
@@ -155,7 +159,7 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 457px) {
     .start__row {
         padding-top: 6.0rem;
     }
@@ -163,6 +167,19 @@
     .start__card {
         padding: 1.6rem 0;
         padding-bottom: 1.6rem;
+        position: relative;
+    }
+
+    .start__card::before {
+        content: "";
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        background-color: inherit;
+        z-index: -100;
+        top: 0;
+        left: -1.6rem;
+        border-radius: inherit;
     }
 
     .start__card_title {

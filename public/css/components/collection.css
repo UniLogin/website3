@@ -35,8 +35,8 @@
 }
 
 .collection__card_logo {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4.25rem;
+    height: 4rem;
     margin: 4.5rem 16rem 19rem;
 }
 
@@ -50,7 +50,8 @@
     display: flex;
     justify-content: space-between;
     text-align: left;
-    bottom: 7rem;
+    /* bottom: 7rem; */
+    bottom: 25%;
     left: -13.24%;
 }
 
@@ -60,6 +61,7 @@
 }
 
 .collection__avatar {
+    height: 4rem;
     border-radius: 50%;
 }
 
@@ -201,6 +203,10 @@
 }
 
 @media only screen and (max-width: 1044px) {
+    .collection__title {
+        font-size: 3.8rem;
+    }
+
     .collection__background {
         width: 59.7rem;
         height: 59.7rem;
@@ -256,6 +262,32 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .collection__title {
+        font-size: 2.8rem;
+    }
+
+    .collection__card_logo {
+        width: 2.865rem;
+        height: 2.7rem;
+        margin: 3rem 10.8rem 12.76rem;
+    }
+
+    .collection__tab {
+        padding: 1.36rem .97rem 1.07rem 1.025rem;
+    }
+
+    .collection__avatar {
+        height: 2.7rem;
+    }
+
+    .collection__login {
+        font-size: 1.6rem;
+    }
+
+    .collection__money {
+        font-size: 1.3rem;
+    }
+
     .collection__circle_1 {
         width: 50vw;
         height: 50vw;
@@ -273,12 +305,13 @@
 
 
     .collection__card {
+        margin-top: 5.5rem;
         margin-bottom: 74.7rem;
     }
     
     .collection__features {
         display: flex;
-        top: 25rem;
+        top: 18rem;
         transform: translateY(50%);
     }
 

@@ -68,4 +68,22 @@
     .heroimage__left_text {
         font-size: 1.6rem;
     }
+
+    .heroimage__right {
+        position: relative;
+        z-index: 110;
+    }
+    
+    .heroimage__right::before {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        top: 0;
+        left: -1.5rem;
+        background-color: var(--color-signup-background);
+        box-shadow: 0px 24px 104px rgba(0, 131, 188, 0.1);
+        border-radius: inherit;
+        z-index: -100;
+    }
 }
