@@ -43,35 +43,3 @@
         display: none;
     }
 }
-/* @media only screen and (max-width: 1200px) {
-    .background-logo__shape {
-        width: 84.6rem;
-        height: 79.6rem;
-        top: 0;
-        right: -24rem;
-    }
-
-}
-
-@media only screen and (max-width: 550px) {
-    .background-logo__shape {
-        display: block;
-        width: 47rem;
-        height: 44.2rem;
-        top: 50rem;
-        right: -17rem;
-    }
-    .background-logo__glow {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    .background-logo__shape {
-        display: none;
-
-    }
-    .background-logo__glow {
-        display: none;
-    }
-} */
