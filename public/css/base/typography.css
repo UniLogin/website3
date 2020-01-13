@@ -7,6 +7,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../../assets/fonts/HelveticaNeue-Medium.woff2') format('woff2'),
+      url('../../assets/fonts/HelveticaNeue-Medium.woff') format('woff'),
+      url('../../assets/fonts/HelveticaNeue-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
 :root {
   font-family: 'Tajawal', sans-serif;
 }

@@ -8,6 +8,7 @@ text-align: center;
 
 html {
     font-size: 65%;
+    scroll-behavior: smooth;
     -webkit-font-smooth: antialiased;
 }
 
