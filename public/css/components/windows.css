@@ -32,8 +32,8 @@
     font-size: 1.8rem;
     line-height: 3.2rem;
     color: var(--color-text-second);
-    font-family: "HelveticaNeue";
-    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 .browser {

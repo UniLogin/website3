@@ -1,21 +1,3 @@
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url('../../assets/fonts/HelveticaNeue.woff2') format('woff2'),
-      url('../../assets/fonts/HelveticaNeue.woff') format('woff'),
-      url('../../assets/fonts/HelveticaNeue.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url('../../assets/fonts/HelveticaNeue-Medium.woff2') format('woff2'),
-      url('../../assets/fonts/HelveticaNeue-Medium.woff') format('woff'),
-      url('../../assets/fonts/HelveticaNeue-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
 :root {
   font-family: 'Tajawal', sans-serif;
 }
@@ -35,9 +17,13 @@ h6 {
 
 p {
   line-height: 3.2rem;
-  font-family: "HelveticaNeue";
+  font-family: 'Lato', sans-serif;
 }
 
 a {
   font-size: 1.6rem;
+}
+
+span {
+  font-family: inherit;
 }
