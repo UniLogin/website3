@@ -45,6 +45,9 @@
 .trusted-by__background {
     position: absolute;
     z-index: -1000;
+    top: 0;
+    transform: translateY(18%);
+    animation: left_glow 5s infinite alternate;
 }
 
 
@@ -97,5 +100,26 @@
         grid-template-columns:  1fr;
         grid-row-gap: 3.5rem;
         padding-bottom: 7.8rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .trusted-by__mew {
+        margin-left: 0;
+    }
+
+    .trusted-by__iexec {
+        margin-right: 0;
+    }
+}
+
+@keyframes left_glow {
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        top: -25rem;
+        transform: scale(1);
     }
 }

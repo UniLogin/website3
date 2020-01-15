@@ -19,6 +19,7 @@
     right: -26rem;
     transform: translate(-15%, 55%);
     z-index: -200;
+    animation: logo_glow 5s infinite alternate;
 }
 
 @media only screen and (max-width: 1290px) {
@@ -41,5 +42,26 @@
     }
     .background-logo__glow {
         display: none;
+    }
+}
+
+@keyframes logo_glow {
+    0% {
+        transform: scale(1.1);
+        top: 30rem;
+        right: -10rem;
+    }
+
+    50% {
+        transform: scale(1.1);
+        top: 38rem;
+        right: -20rem;
+    }
+
+
+    100% {
+        transform: scale(1.1);
+        top: 30rem;
+        right: -15rem;
     }
 }

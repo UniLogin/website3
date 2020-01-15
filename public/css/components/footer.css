@@ -52,6 +52,7 @@
     .footer__row {
         flex-direction: column;
         align-items: flex-start;
+        padding: 2.3rem 1.1rem;
     }
 
     .footer__content {
