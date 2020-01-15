@@ -5,7 +5,7 @@
 }
 
 .section-delimeter {
-  border: 1px solid #DDEBF1;
+  border-bottom: 1px solid #DDEBF1;
 }
 
 .delimeter {
@@ -69,4 +69,5 @@
   height: 100%;
   top: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
 }

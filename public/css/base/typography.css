@@ -20,10 +20,14 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
+span {
+  font-family: inherit;
+}
+
 a {
   font-size: 1.6rem;
 }
 
-span {
-  font-family: inherit;
+a:hover {
+  text-decoration: none;
 }

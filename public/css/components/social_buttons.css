@@ -1,5 +1,6 @@
 .social__links {
     position: absolute;
+    position: fixed;
     top: 3.6rem;
     right: 3.7rem;
     display: grid;
@@ -23,19 +24,54 @@
 
 }
 
-
-.social__link > a > button > img {
+.social__link > a > .social__link_icon {
     transform: translate(50% 500%);
     cursor: pointer;
 }
 
-
-.social__link > a > button {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+.social__link_medium {
+    height: 2rem;
+    width: 2rem;
+    background: url("../../assets/images/svg/SocialLinks/Medium.svg") no-repeat center;
 }
 
+.social__link_discord {
+    height: 2rem;
+    width: 2rem;
+    background: url("../../assets/images/svg/SocialLinks/Discord.svg") no-repeat center;
+}
+
+.social__link_twitter {
+    height: 2rem;
+    width: 2rem;
+    background: url("../../assets/images/svg/SocialLinks/Twitter.svg") no-repeat center;
+}
+
+.social__link:hover > a {
+    background: linear-gradient(91.11deg, #1F46C4 0%, #0E1F98 100%);
+    transition: all .5s;
+}
+
+.social__link:hover .social__link_medium {
+    background: url("../../assets/images/svg/SocialLinks/Medium_hover.svg") no-repeat center;
+}
+
+.social__link:hover .social__link_discord {
+    background: url("../../assets/images/svg/SocialLinks/Discord_hover.svg") no-repeat center;
+}
+
+.social__link:hover .social__link_twitter {
+    background: url("../../assets/images/svg/SocialLinks/twitter_hover.svg") no-repeat center;
+}
+
+.social__link:active > a {
+    background: linear-gradient(91.11deg, #1239B7 0%, #061895 100%);;
+    box-shadow: unset;
+}
+
+@media only screen and (max-width: 767px) {
+    pointer-events: none;
+}
 
 @media only screen and (max-width: 614px) {
     .social__links {
@@ -44,5 +80,6 @@
         grid-column-gap: .8rem;
         top: 1.6rem;
         right: 2rem;
+        position: absolute;
     }
 }

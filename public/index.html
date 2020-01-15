@@ -26,23 +26,16 @@
                     <ul class="social__links">
                         <li class="social__link">
                             <a href="#">
-                                <button>
-                                    <img src="./assets/images/svg/SocialLinks/Medium.svg" alt="Medium logo">
-                                </button>
+                                    <div class="social__link_icon social__link_medium" src="./assets/images/svg/SocialLinks/Medium.svg"></div>
                             </a>
                         <li class="social__link">
                             <a href="#">
-                                <button>
-                                    <img src="./assets/images/svg/SocialLinks/Discord.svg" alt="Discord logo">
-                                </button>
+                                    <div class="social__link_icon social__link_discord" src="./assets/images/svg/SocialLinks/Discord.svg"></div>
                             </a>
                         </li>
                         <li class="social__link">
                             <a href="#">
-                                <button>
-                                    <img src="./assets/images/svg/SocialLinks/Twitter.svg" alt="Twitter logo"
-                                        class="social__link--twitter">
-                                </button>
+                                    <div class="social__link_icon social__link_twitter" src="./assets/images/svg/SocialLinks/Twitter.svg"></div>
                             </a>
                         </li>
                     </ul>
@@ -68,7 +61,7 @@
                     </div>
                     <div class="heroimage__right">
                         <form class="signup-form">
-                            <h5 class="signup-form__title"><span class="bold">Sign up</span> for free!</h5>
+                            <h5 class="signup-form__title"><b>Subscribe</b> to our pilot program!</h5>
                             <div class="signup-form__input">
                                 <input type="text" placeholder="your email">
                             </div>
@@ -125,55 +118,57 @@
                     <p class="collection__text">Build your app faster by not having to worry about key
                         management, identity and onboarding. You can focus now on what makes your project special!
                     </p>
-                    <div class="collection__card">
-                        <img src="./assets/images/svg/Logo.svg" alt="UniLogin logo" class="collection__card_logo">
-                        <div class="collection__tab">
-                            <div class="collection__tab_left">
-                                <img src="./assets/images/svg/Collection/Avatar.svg" alt="User avatar"
-                                    class="collection__avatar">
-                                <p class="collection__login">alex.unilogin.io</p>
+                    <div class="collection__card_wrapper">
+                        <div class="collection__card">
+                            <img src="./assets/images/svg/Logo.svg" alt="UniLogin logo" class="collection__card_logo">
+                            <div class="collection__tab">
+                                <div class="collection__tab_left">
+                                    <img src="./assets/images/svg/Collection/Avatar.svg" alt="User avatar"
+                                        class="collection__avatar">
+                                    <p class="collection__login">alex.unilogin.io</p>
+                                </div>
+                                <p class="collection__money">$12.34</p>
                             </div>
-                            <p class="collection__money">$12.34</p>
-                        </div>
-                        <div class="collection__background">
-                            <img src="./assets/images/svg/Background/CollectionUnderGlow.svg" alt="Card's glow"
-                                class="collection__glow">
-                            <div class="collection__circle_1"></div>
-                            <div class="collection__circle_2"></div>
-                            <div class="collection__circle_3"></div>
-                            <div class="collection__features">
-                                    <div class="collection__feature_2fa">
-                                        <img src="./assets/images/svg/Collection/2fa.svg" alt="2fa authentication"
-                                            class="collection__feature_icon">
-                                        <h5 class="collection__feature_title">2fa authentication</h5>
-                                    </div>
-                                    <div class="collection__feature_ens">
-                                        <img src="./assets/images/svg/Collection/ENS.svg" alt="ENS"
-                                            class="collection__feature_icon">
-                                        <h5 class="collection__feature_title">ENS</h5>
-                                    </div>
-                                    <div class="collection__feature_identity">
-                                        <img src="./assets/images/svg/Collection/Identity.svg" alt="Identity"
-                                            class="collection__feature_icon">
-                                        <h5 class="collection__feature_title">Identity</h5>
-                                    </div>
-                                    <div class="collection__feature_eo">
-                                        <img src="./assets/images/svg/Collection/EasyOnboarding.svg"
-                                            alt="Easy onboarding" class="collection__feature_icon">
-                                        <h5 class="collection__feature_title">Easy onboarding</h5>
-                                    </div>
-
-                                    <div class="collection__feature_et">
-                                        <img src="./assets/images/svg/Collection/Etherless.svg"
-                                            alt="Etherless transactions" class="collection__feature_icon">
-                                        <h5 class="collection__feature_title">Etherless transactions</h5>
-                                    </div>
-
-                                    <div class="collection__feature_er">
-                                        <img src="./assets/images/svg/Collection/EmailRecovery.svg" alt="Email recovery"
-                                            class="collection__feature_icon">
-                                        <h5 class="collection__feature_title">Email recovery</h5>
-                                    </div>
+                            <div class="collection__background">
+                                <img src="./assets/images/svg/Background/CollectionUnderGlow.svg" alt="Card's glow"
+                                    class="collection__glow">
+                                <div class="collection__circle_1"></div>
+                                <div class="collection__circle_2"></div>
+                                <div class="collection__circle_3"></div>
+                                <div class="collection__features">
+                                        <div class="collection__feature_2fa">
+                                            <img src="./assets/images/svg/Collection/2fa.svg" alt="2fa authentication"
+                                                class="collection__feature_icon">
+                                            <h5 class="collection__feature_title">2fa authentication</h5>
+                                        </div>
+                                        <div class="collection__feature_ens">
+                                            <img src="./assets/images/svg/Collection/ENS.svg" alt="ENS"
+                                                class="collection__feature_icon">
+                                            <h5 class="collection__feature_title">ENS</h5>
+                                        </div>
+                                        <div class="collection__feature_identity">
+                                            <img src="./assets/images/svg/Collection/Identity.svg" alt="Identity"
+                                                class="collection__feature_icon">
+                                            <h5 class="collection__feature_title">Identity</h5>
+                                        </div>
+                                        <div class="collection__feature_eo">
+                                            <img src="./assets/images/svg/Collection/EasyOnboarding.svg"
+                                                alt="Easy onboarding" class="collection__feature_icon">
+                                            <h5 class="collection__feature_title">Easy onboarding</h5>
+                                        </div>
+    
+                                        <div class="collection__feature_et">
+                                            <img src="./assets/images/svg/Collection/Etherless.svg"
+                                                alt="Etherless transactions" class="collection__feature_icon">
+                                            <h5 class="collection__feature_title">Etherless transactions</h5>
+                                        </div>
+    
+                                        <div class="collection__feature_er">
+                                            <img src="./assets/images/svg/Collection/EmailRecovery.svg" alt="Email recovery"
+                                                class="collection__feature_icon">
+                                            <h5 class="collection__feature_title">Email recovery</h5>
+                                        </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -186,19 +181,22 @@
                     <div class="windows__row">
                         <div class="windows__left">
                             <div class="delimeter"></div>
-                            <h2 class="windows__title">Create your account in seconds <b>with no downloads
-                                    required!</b</h2>
+                            <h2 class="windows__title">Create your account in seconds <b>with no downloads required!</b></h2>
                             <p class="windows__text">But this is not the normal
                                     crypto account you grew up with! Every Unilogin account is a smart contract and open
                                     standard for onboarding and login. Every account also comes with a ENS name, to make
                                     integration simpler with the teamle ecosystem.</p>
                         </div>
-                        <div class="browser">
-                            <ul class="browser__navigation">
-                                <li class="browser__button"></li>
-                                <li class="browser__button"></li>
-                                <li class="browser__button"></li>
-                            </ul>
+                        <div class="browser browser_1">
+                            <img src="./assets/images/svg/Background/PurpleGlow.svg" alt="Window's glow"
+                                class="browser__glow">
+                            <div class="browser__wrapper">
+                                <ul class="browser__navigation">
+                                    <li class="browser__button"></li>
+                                    <li class="browser__button"></li>
+                                    <li class="browser__button"></li>
+                                </ul>
+                            </div>
                         </div>
 
                     </div>
@@ -206,22 +204,24 @@
                         <div class="windows__left">
                             <div class="delimeter"></div>
                             <h2 class="windows__title">We find the <b>best onramp anywhere in the
-                                    world.</b>
-                            </h2>
+                                    world.</b></h2>
                             <p class="windows__text">Crypto doesn’t have borders, but most of yours users
                                 still do. So we partner with over 20 different onramp providers to give you the best
                                 cover
                                 in 40 countries.</p>
                         </div>
-                        <div class="browser">
-                            <ul class="browser__navigation">
-                                <li class="browser__button"></li>
-                                <li class="browser__button"></li>
-                                <li class="browser__button"></li>
-                            </ul>
+                        <div class="browser browser_2">
                             <img src="./assets/images/svg/Background/PurpleGlow.svg" alt="Window's glow"
                                 class="browser__glow">
+                            <div class="browser__wrapper">
+                                <ul class="browser__navigation">
+                                    <li class="browser__button"></li>
+                                    <li class="browser__button"></li>
+                                    <li class="browser__button"></li>
+                                </ul>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -231,40 +231,55 @@
         <section class="start">
             <div class="container">
                 <div class="start__row">
-                    <div class="start__card start__card_1 start__theme_purple">
-                        <div class="start__card_top">
-                            <h6 class="start__card_number">01</h6>
-                            <div class="dash"></div>
-                        </div>
-                        <h3 class="start__card_title">Fast and easy: <b>Use an existing provider</b></h3>
-                        <p class="start__card_text">Your users can use any existing UniLogin provider to access your
-                            app. Just add one line of code!</p>
-                        <form action="" class="start__picker">
-                            <label for="providerPicker" class="start__label">Pick your provider:</label>
-                            <div class="start__select_wrapper">
-                                <select type="select" id="providerSelect" type="text" class="start__select">
-                                    <option value="value1">unilogin.io</option>
-                                    <option value="value2">Variant - 2</option>
-                                </select>
-                                <img src="./assets/images/svg/CaretDown.svg" alt="Caret down icon" class="start__select_icon">
+                    <div class="grid__item_1">
+                        <div class="start__card start__card_1 start__theme_purple">
+                            <div class="start__card_top">
+                                <h6 class="start__card_number">01</h6>
+                                <div class="dash"></div>
                             </div>
-                            <div id="providerOutput" class="start__code">scriptscrfnsklfnksmfmslmm</div>
-                        </form>
-                        <a href="#" class="start__link">Link to lorem ipsum</a>
-                    </div>
-                    <div class="start__cta">
-                        <h2 class="start__cta_title">Start developing now!</h2>
-                        <p class="start__cta_text">Two ways to integrate in your ethereum app.</p>
-                    </div>
-                    <div class="start__card start__card_2 start__theme_turquoise">
-                        <div class="start__card_top">
-                            <h6 class="start__card_number">02</h6>
-                            <div class="dash"></div>
+                            <h3 class="start__card_title">Fast and easy: <b>Use an existing provider</b></h3>
+                            <p class="start__card_text">Your users can use any existing UniLogin provider to access your
+                                app. Just add one line of code!</p>
+                            <div class="start__picker">
+                                <label for="providerPicker" class="start__label">Pick your provider:</label>
+                                <div class="start__select_wrapper">
+                                    <div class="start__select" id="start__select">
+                                        <button class="start__select_text">unilogin.io</button>
+                                        <ul class="start__select_options" id="start__select_options">
+                                            <li data-value="unilogin.io" class="start__select_option selected">
+                                                <button class="start__select_button">unilogin.io</button>
+                                            </li>
+                                            <li data-value="val2" class="start__select_option">
+                                                <button class="start__select_button">value 2</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./assets/images/svg/CaretDown.svg" alt="Caret down icon" class="start__select_icon">
+                                </div>
+                                <div id="providerOutput" class="start__code_wrapper">
+                                    <p class="start__code" id="start__code">scripts for unilogin.io</p>
+                                </div>
+                            </div>
+                            <a href="#" class="start__link">Link to lorem ipsum</a>
                         </div>
-                        <h3 class="start__card_title">Advanced and powerful:<b> Build your own provider</b></h3>
-                        <p class="start__card_text">If your app is a wallet or has lorem ipsum you can build your own
-                            Unilogin provider.</p>
-                        <a href="#" class="start__link">Read the document</a>
+                    </div>
+                    <div class="grid__item_2">
+                        <div class="start__cta">
+                            <h2 class="start__cta_title">Start developing now!</h2>
+                            <p class="start__cta_text">Two ways to integrate in your ethereum app.</p>
+                        </div>
+                    </div>
+                    <div class="grid__item_3">
+                        <div class="start__card start__card_2 start__theme_turquoise">
+                            <div class="start__card_top">
+                                <h6 class="start__card_number">02</h6>
+                                <div class="dash"></div>
+                            </div>
+                            <h3 class="start__card_title">Advanced and powerful:<b> Build your own provider</b></h3>
+                            <p class="start__card_text">If your app is a wallet or has lorem ipsum you can build your own
+                                Unilogin provider.</p>
+                            <a href="#" class="start__link">Read the document</a>
+                        </div>
                     </div>
                 </div>
         </section>
@@ -288,24 +303,20 @@
                                     <img src="./assets/images/png/Team/Alex_Van_de_Sande.png" alt="Alan Van de Sande"
                                         class="person__photo">
                                     <div class="person__filter"></div>
+                                    <div class="person__filter_hover"></div>
                                     <ul class="person__links">
-                                        <li class="person__links_github social__link">
+                                        <li class="social__link">
                                             <a href="#">
-                                                <button>
-                                                    <img src="./assets/images/svg/SocialLinks/Github.svg"
-                                                        alt="Github icon">
-                                                </button>
+                                                <div class="social__link_icon social__link_medium" src="./assets/images/svg/SocialLinks/Medium.svg"></div>
+                                            </a>
+                                        <li class="social__link">
+                                            <a href="#">
+                                                <div class="social__link_icon social__link_discord" src="./assets/images/svg/SocialLinks/Discord.svg"></div>
                                             </a>
                                         </li>
-                                        <li class="person__links_twitter social__link">
+                                        <li class="social__link">
                                             <a href="#">
-                                                <img src="./assets/images/svg/SocialLinks/Medium.svg" alt="Medium icon">
-                                            </a>
-                                        </li>
-                                        <li class="person__links_media social__link">
-                                            <a href="#">
-                                                <img src="./assets/images/svg/SocialLinks/Twitter.svg"
-                                                    alt="Twitter icon">
+                                                <div class="social__link_icon social__link_twitter" src="./assets/images/svg/SocialLinks/Twitter.svg"></div>
                                             </a>
                                         </li>
                                     </ul>
@@ -319,24 +330,20 @@
                                     <img src="./assets/images/png/Team/Marek_Kirejczyk.png" alt="Marek Kirejczyk"
                                         class="person__photo">
                                     <div class="person__filter"></div>
+                                    <div class="person__filter_hover"></div>
                                     <ul class="person__links">
-                                        <li class="person__links_github social__link">
+                                        <li class="social__link">
                                             <a href="#">
-                                                <button>
-                                                    <img src="./assets/images/svg/SocialLinks/Github.svg"
-                                                        alt="Github icon">
-                                                </button>
+                                                <div class="social__link_icon social__link_medium" src="./assets/images/svg/SocialLinks/Medium.svg"></div>
+                                            </a>
+                                        <li class="social__link">
+                                            <a href="#">
+                                                <div class="social__link_icon social__link_discord" src="./assets/images/svg/SocialLinks/Discord.svg"></div>
                                             </a>
                                         </li>
-                                        <li class="person__links_twitter social__link">
+                                        <li class="social__link">
                                             <a href="#">
-                                                <img src="./assets/images/svg/SocialLinks/Medium.svg" alt="Medium icon">
-                                            </a>
-                                        </li>
-                                        <li class="person__links_media social__link">
-                                            <a href="#">
-                                                <img src="./assets/images/svg/SocialLinks/Twitter.svg"
-                                                    alt="Twitter icon">
+                                                <div class="social__link_icon social__link_twitter" src="./assets/images/svg/SocialLinks/Twitter.svg"></div>
                                             </a>
                                         </li>
                                     </ul>
@@ -351,6 +358,7 @@
                                 <div class="person__avatar">
                                     <img src="./assets/images/png/Team/Justyna.png" alt="Justyna" class="person__photo">
                                     <div class="person__filter"></div>
+                                    <div class="person__filter_hover"></div>
                                 </div>
                                 <h5 class="person__name">Justyna</h5>
                                 <p class="person__role">Software developer</p>
@@ -360,6 +368,7 @@
                                     <img src="./assets/images/png/Team/Jaroslaw.png" alt="Jaroslaw"
                                         class="person__photo">
                                     <div class="person__filter"></div>
+                                    <div class="person__filter_hover"></div>
                                 </div>
                                 <h5 class="person__name">Jaroslaw</h5>
                                 <p class="person__role">Software developer</p>
@@ -368,6 +377,7 @@
                                 <div class="person__avatar">
                                     <img src="./assets/images/png/Team/Natalia.png" alt="Natalia" class="person__photo">
                                     <div class="person__filter"></div>
+                                    <div class="person__filter_hover"></div>
                                 </div>
                                 <h5 class="person__name">Natalia</h5>
                                 <p class="person__role">UI and UX Designer</p>
@@ -376,6 +386,7 @@
                                 <div class="person__avatar">
                                     <img src="./assets/images/png/Team/Brantly.png" alt="Brantly" class="person__photo">
                                     <div class="person__filter"></div>
+                                    <div class="person__filter_hover"></div>
                                 </div>
                                 <h5 class="person__name">Brantly</h5>
                                 <p class="person__role">Developer relations</p>
