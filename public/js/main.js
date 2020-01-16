@@ -1,3 +1,5 @@
+import { companiesSlider } from './companiesSlider.js';
+
 (() => {
     let providerSelect = document.getElementById("start__select");
     let providerOutput = document.getElementById("start__code");
@@ -13,8 +15,8 @@
     }
 
     document.addEventListener('click', event => {
-        isClickInside = providerSelect.contains(event.target);
-        isClickOptionsBody = (event.target.id == 'start__select_options');
+        let isClickInside = providerSelect.contains(event.target);
+        // isClickOptionsBody = (event.target.id == 'start__select_options');
         if(!isClickInside) {
             closeOptions();
         }
@@ -56,4 +58,18 @@
         providerSelectIcon.classList.remove('reversed-icon');
     }
 
+    const browser1 = document.querySelector('.browser_1');
+    const onScroll = () => {
+        // console.log(window.scrollY)
+        const browser1Top = browser1.offsetTop;
+        const browser1Height = browser1.offsetHeight;
+
+        // console.log(window.scrollY + browser1Height / 2)
+        
+        if(window.scrollY + window.innerHeight >= browser1Top + browser1Height / 2 ) {
+            // console.log('browser')
+        }        
+    }
+    
+    window.addEventListener('scroll', onScroll)
 })();
