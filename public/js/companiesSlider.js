@@ -1,7 +1,7 @@
 
 import Swipper from 'swiper';
-
-const options = {
+(() => {
+  const options = {
     autoplay: {
         delay: 1700
     },
@@ -34,11 +34,5 @@ const options = {
     }
 }
 
-// window.onresize = ev => {
-//   if(window.innerWidth <= 550) {
-//     console.log('550!');
-//     companiesSlider.destroy();
-//   }
-// }
-
-export const companiesSlider = new Swipper('.swiper-container', options);
+  const companiesSlider = new Swipper('.swiper-container', options);
+})();
