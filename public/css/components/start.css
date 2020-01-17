@@ -230,6 +230,7 @@
 
     .start__cta {
         padding-left: 0;
+        margin-bottom: 5.6rem;
     }
 
     .start__card_title {
@@ -241,7 +242,6 @@
         grid-row: 1 / 2;
         grid-column: unset;
         padding-left: 0;
-        margin-bottom: 7.5rem;
         font-size: 4.8rem;
     }
     
@@ -254,6 +254,13 @@
     .start__row > .grid__item_3 {
         grid-row: unset;
         grid-column: 1 / 2;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .start .container {
+        max-width: unset;
+        padding: 0 3rem;
     }
 }
 

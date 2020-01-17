@@ -3,7 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    overflow: hidden;
+}
+
+.header__logo {
+    opacity: 0;
+    animation: fadeInUp 1s .5s;
+    animation-fill-mode: both;
 }
 
 @media only screen and (max-width: 614px) {

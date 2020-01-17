@@ -10,6 +10,9 @@
     width: 84.6rem;
     height: 79.6rem;
     z-index: -100;
+    opacity: 0;
+    animation: fadeInRight 1s 1s;
+    animation-fill-mode: both;
 }
 
 

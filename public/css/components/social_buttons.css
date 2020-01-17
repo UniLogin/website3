@@ -69,6 +69,24 @@
     box-shadow: unset;
 }
 
+.social__links .media {
+    opacity: 0;
+    animation: fadeInUp 1s .5s;
+    animation-fill-mode: both;
+}
+
+.social__links .discord {
+    opacity: 0;
+    animation: fadeInUp 1s 1s;
+    animation-fill-mode: both;
+}
+
+.social__links .twitter {
+    opacity: 0;
+    animation: fadeInUp 1s 1.25s;
+    animation-fill-mode: both;
+}
+
 @media only screen and (max-width: 767px) {
     pointer-events: none;
 }

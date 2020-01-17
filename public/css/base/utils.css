@@ -34,8 +34,8 @@
 
 @media (min-width: 200px) {
   .container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
   }
 }
 
@@ -48,6 +48,8 @@
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+    max-width: unset;
+    padding: 0 3rem
   }
 }
 
