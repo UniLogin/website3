@@ -6,8 +6,6 @@
     let providerSelectIcon = document.querySelector('.start__select_icon');
     let providerIsShown = false;
 
-    console.log(providerPlaceholder);
-
     providerSelect.onclick = () => {
         togleProviderShown();
     }
@@ -30,7 +28,6 @@
                 option.classList.add('selected');
                 providerOutput.innerText = option.getAttribute("data-value");
                 providerPlaceholder.innerText = option.innerText;
-                console.log(option.innerText);
             } else {
             }
         });
