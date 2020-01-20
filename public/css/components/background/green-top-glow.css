@@ -3,26 +3,12 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    /* border: 2px solid red; */
-    animation: top_glow 5s infinite alternate;
 }
 
 @media only screen and (max-width: 1290px) {
     .green-glow-top {
         right: 0;
         transform: translateX(0);
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .green-glow-top {
-        animation: top_glow_tablet 7s infinite alternate;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .green-glow-top {
-        animation: top_glow_mobile 5s infinite alternate;
     }
 }
 
@@ -35,7 +21,6 @@
         height: 100%;
         top: -25%;
         transform: scale(1.8);
-        /* animation: unset; */
     }
 }
 

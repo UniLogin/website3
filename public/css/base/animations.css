@@ -6,6 +6,12 @@
     opacity: 1;
 }
 
+.fadeInUpText {
+  opacity: 0;
+  animation: fadeInUpText 1s 1s;
+  animation-fill-mode: both;
+}
+
 @keyframes fadeOut {
     from {
         opacity: 1;

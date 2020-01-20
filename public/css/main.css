@@ -1,5 +1,3 @@
 @import './vendor/minireset.css';
-@import '../../node_modules/@glidejs/glide/dist/css/glide.core.css';
-@import '../../node_modules/@glidejs/glide/dist/css/glide.theme.css';
-@import '../../node_modules/swiper/css/swiper.css';
 @import './base/all.css';
+@import '../../node_modules/swiper/css/swiper.css';

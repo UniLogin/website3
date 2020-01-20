@@ -1,38 +1,24 @@
-
-import Swipper from 'swiper';
+import { tns } from "tiny-slider/src/tiny-slider";
 (() => {
-  const options = {
-    autoplay: {
-        delay: 1700
-    },
-    slidesPerView: 'auto',
-    slidesPerColumn: 1,
-    slidesPerColumnFill: 'column',
-    spaceBetween: 40,
-    loop: true,
-    pagination: {
-        dynamicBullets: true,
-        clickable: true
-    },
-    breakpoints: {
-        200: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 5,
-          spaceBetween: 40,
-        }
+  const companiesSlider = tns({
+    container: '.trusted-by__companies',
+    items: 4,
+    autoplay: true,
+    mouseDrag: true,
+    slideBy: "page",
+    swipeAngle: false,
+    controls: false,
+    autoplayButtonOutput: false,
+    responsive: {
+      '1024': {
+        items: 5,
+      },
+      '890': {
+        items: 4,
+      },
+      '500': {
+        items: 3
+      }
     }
-}
-
-  const companiesSlider = new Swipper('.swiper-container', options);
+  });
 })();

@@ -12,7 +12,6 @@
 
     document.addEventListener('click', event => {
         let isClickInside = providerSelect.contains(event.target);
-        // isClickOptionsBody = (event.target.id == 'start__select_options');
         if(!isClickInside) {
             closeOptions();
         }

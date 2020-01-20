@@ -22,7 +22,7 @@
     right: -26rem;
     transform: translate(-15%, 55%);
     z-index: -200;
-    animation: logo_glow 5s infinite alternate;
+    /* animation: logo_glow 5s infinite alternate; */
 }
 
 @media only screen and (max-width: 1290px) {
