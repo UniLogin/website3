@@ -47,6 +47,12 @@
     background: url("../../assets/images/svg/SocialLinks/Twitter.svg") no-repeat center;
 }
 
+.social__link_linkedin {
+    height: 2rem;
+    width: 2rem;
+    background: url("../../assets/images/svg/SocialLinks/Linkedin.svg") no-repeat center;
+}
+
 .social__link:hover > a {
     background: linear-gradient(91.11deg, #1F46C4 0%, #0E1F98 100%);
 }
@@ -61,6 +67,10 @@
 
 .social__link:hover .social__link_twitter {
     background: url("../../assets/images/svg/SocialLinks/Twitter_hover.svg") no-repeat center;
+}
+
+.social__link:hover .social__link_linkedin {
+    background: url("../../assets/images/svg/SocialLinks/Linkedin_hover.svg") no-repeat center;
 }
 
 .social__link:active > a {

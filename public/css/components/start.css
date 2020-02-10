@@ -51,7 +51,7 @@
     border-radius: 1.6rem;
     display: flex;
     flex-direction: column;
-    padding: 7.5rem 8.3rem;
+    padding: 5.6rem 8.3rem;
     border-radius: 1.6rem;
 }
 
@@ -145,18 +145,25 @@
 
 .start__code_wrapper {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     height: 5.6rem;
     background-color: #F3EBFB;
     color: var(--color-text-second);
     padding-left: 1.6rem;
     font-size: 1.5rem;
     border-radius: 1.3rem;
-    margin-bottom: 4rem;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+.start__theme_turquoise .start__code_wrapper {
+    background-color: #D8F3F4;
 }
 
 .start__code {
     line-height: 5.6rem;
+    text-overflow: ellipsis;
+    flex: 0 0 auto;
 }
 
 .start__label {
@@ -207,6 +214,10 @@
 
 .start__card_title {
     font-size: 4rem;
+}
+
+.start__card_2 .start__card_title {
+    font-size: 3.7rem
 }
 
 .start__card_text {

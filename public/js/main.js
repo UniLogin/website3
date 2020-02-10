@@ -1,4 +1,4 @@
 import './companiesSlider.js';
 import './video';
-import './providerSelect';
+import './pickers.js';
 import './animations';
