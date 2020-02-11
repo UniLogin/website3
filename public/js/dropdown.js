@@ -1,5 +1,4 @@
 export const dropdown = (dropdown, placeholder, optionsWrapper, options, output, icon) => {
-    console.log({dropdown, placeholder, icon, output, optionsWrapper, options})
     let dropdownIsShown = false;
     document.addEventListener('click', event => {
         let isClickInside = dropdown.contains(event.target);
