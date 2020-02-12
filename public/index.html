@@ -61,12 +61,12 @@
                         </div>
                     </div>
                     <div class="heroimage__right">
-                        <form class="signup-form">
+                        <form class="signup-form" action="http://localhost:19511/subscribe" method="POST" target="_blank">
                             <h5 class="signup-form__title"><b>Subscribe</b> to our pilot program!</h5>
                             <div class="signup-form__input">
-                                <input type="text" placeholder="your email">
+                                <input type="email" name="email" placeholder="your email">
                             </div>
-                            <button class="signup-form__button">Subscribe</button>
+                            <input type="submit" class="signup-form__button" value="Subscribe">
                             <div class="signup-form__background">
                                 <img class="signup_form__glow" src="./assets/images/svg/Background/FormGlow.svg"
                                     alt="Form under glow">
