@@ -171,6 +171,12 @@
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .video__play-btn {
+        transform: translate(-50%, -50%) scale(.7);
+    }
+}
+
 @media only screen and (max-width: 421px) {
     .windows {
         margin-bottom: 7.8rem;

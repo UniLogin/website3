@@ -30,7 +30,9 @@
     }
 
     video1.onended = () => {
-        video1Btn.classList.remove('fadeOut');
+        setTimeout(() => {
+            video1Btn.classList.remove('fadeOut');
+        }, 3000);
     }
 
     video2.onplay = () => {
@@ -38,7 +40,9 @@
     }
 
     video2.onended = () => {
-        video2Btn.classList.remove('fadeOut');
+        setTimeout(() => {
+            video2Btn.classList.remove('fadeOut');
+        }, 3000);
     }
 
     video1.onclick = () => {
