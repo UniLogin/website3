@@ -166,6 +166,15 @@
     flex: 0 0 auto;
 }
 
+#start__code_library.start__code {
+    line-height: 2.5rem;
+    padding-top: 2rem
+}
+
+.start__code_wrapper.library {
+    height: 9.2rem;
+}
+
 .start__label {
     font-size: 1.8rem;
     color: var(--color-text-second);

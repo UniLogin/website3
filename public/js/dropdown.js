@@ -18,7 +18,7 @@ export const dropdown = (dropdown, placeholder, optionsWrapper, options, output,
             if (!option.classList.contains('selected')) {
                 selectedOption.classList.remove('selected');
                 option.classList.add('selected');
-                output.innerText = option.getAttribute("data-value");
+                output.innerHTML = option.getAttribute("data-value");
                 placeholder.innerText = option.innerText;
             } else {
             }
