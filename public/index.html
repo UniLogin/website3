@@ -259,7 +259,7 @@
                                     </button>
                                     <video id="video_1" class="browser__video" autoplay muted width="320" height="240">
                                         <source src="./assets/video/CreateAccountUniLogin.mp4" type="video/mp4">
-                                        <source src="./assets/video/CreateAccountUniLogin.mp4.webm" type="video/webm">
+                                        <source src="./assets/video/CreateAccountUniLogin.webm" type="video/webm">
                                     Your browser does not support the video tag.
                                     </video>
                                 </div>
@@ -292,7 +292,7 @@
                                     </button>
                                     <video id="video_2" class="browser__video" autoplay muted width="320" height="240">
                                         <source src="./assets/video/RampUniLogin3.mp4" type="video/mp4">
-                                        <source src="./assets/video/RampUniLogin2.webm" type="video/webm">
+                                        <source src="./assets/video/RampUniLogin3.webm" type="video/webm">
                                     Your browser does not support the video tag.
                                     </video>
                                 </div>
@@ -358,18 +358,19 @@
                                     <div class="start__select" id="start__select_library">
                                         <button class="start__select_text" id="start__placeholder_library">web3js</button>
                                         <ul class="start__select_options" id="start__select_options_library">
-                                            <li data-value="web3Provider = new Web3Provider(...)" class="start__select_option option_library selected">
+                                            <li data-value="ul = UniLogin.createPicker(window.ethereum);<br>web3 = new Web3(ul);" class="start__select_option option_library selected">
                                                 <button class="start__select_button">web3js</button>
                                             </li>
-                                            <li data-value="web3 = new Web3(web3Provider);" class="start__select_option option_library">
+                                            <li data-value="ul = UniLogin.createPicker(window.ethereum);<br>provider = new providers.Web3Provider(ul);" class="start__select_option option_library">
                                                 <button class="start__select_button">ethers.js</button>
                                             </li>
                                         </ul>
                                     </div>
                                     <img src="./assets/images/svg/CaretDown.svg" id="start__icon_library" alt="Caret down icon" class="start__select_icon">
                                 </div>
-                                <div id="providerOutput" class="start__code_wrapper">
-                                    <p class="start__code" id="start__code_library">web3Provider = new Web3Provider(...)</p>
+                                <div id="providerOutput" class="start__code_wrapper library">
+                                    <p class="start__code" id="start__code_library">ul = UniLogin.createPicker(window.ethereum);<br>
+                                        web3 = new Web3(ul);<p>
                                 </div>
                                 </div>
                         </div>
