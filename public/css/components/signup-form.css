@@ -10,6 +10,7 @@
     justify-content: center;
     padding: 5rem;
     position: relative;
+    min-height: 306px;
 }
 
 .signup-form__title {
@@ -65,6 +66,12 @@
     transition: all .3s;
 }
 
+.signup-form__subtitle {
+    font-size: 20px;
+    line-height: 3.6rem;
+    color: #0F0C4A;
+}
+
 .signup-form__button:hover {
     /* background: linear-gradient(97.38deg, #1239B7 0%, #061895 100%); */
     background: linear-gradient(97.38deg, #3158D7 0%, #182AA9 100%);
@@ -83,11 +90,14 @@
     overflow: visible;
 }
 
+
+
 @media only screen and (max-width: 470px) {
     .signup-form {
         padding: unset; 
         background-color: unset;
         padding: 2.8rem 0;
+        min-height: 223px;
     }
 
     .signup-form {
