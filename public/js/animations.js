@@ -13,9 +13,10 @@ import { waypoint } from './waypoint';
     const collectionER = document.querySelector('.collection__feature_er');
 
     window.onscroll = () => {
-        // waypoint
         waypoint(trustedByRow, () => {
-            trustedByRow.classList.add('fadeInUpText');
+            if(window.innerWidth >= 900) {
+                trustedByRow.classList.add('fadeInUpText');
+            }
         });
 
         waypoint(collectionTitle, () => {
@@ -28,8 +29,6 @@ import { waypoint } from './waypoint';
 
         waypoint(collectionCard, () => {
             collection2FA.classList.add('fadeInUpText');
-            // console.log(collection2FA);
-            console.log('Collection section')
         });
     }
 })()

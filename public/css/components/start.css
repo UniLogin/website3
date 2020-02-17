@@ -145,7 +145,6 @@
 
 .start__code_wrapper {
     display: flex;
-    /* align-items: center; */
     height: 5.6rem;
     background-color: #F3EBFB;
     color: var(--color-text-second);
@@ -168,7 +167,9 @@
 
 #start__code_library.start__code {
     line-height: 2.5rem;
-    padding-top: 2rem
+    padding-top: 2rem;
+    width: 2rem;
+    white-space: nowrap;
 }
 
 .start__code_wrapper.library {
