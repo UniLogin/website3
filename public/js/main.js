@@ -1,5 +1,5 @@
 import './companiesSlider.js';
-import './video';
+import './video.js';
 import './pickers.js';
-import './animations';
-import './handleSubmit'
+import './animations.js';
+import './handleSubmit.js';
