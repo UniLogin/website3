@@ -51,7 +51,7 @@
     border-radius: 1.6rem;
     display: flex;
     flex-direction: column;
-    padding: 5.6rem 8.3rem;
+    padding: 5.6rem 7.0rem;
     border-radius: 1.6rem;
 }
 
@@ -170,6 +170,16 @@
     padding-top: 2rem;
     width: 2rem;
     white-space: nowrap;
+}
+
+#start__code_manager.start__code {
+    line-height: 2.5rem;
+}
+
+.start__code_wrapper.manager {
+    height: 9.2rem;
+    display: flex;
+    align-items: center;
 }
 
 .start__code_wrapper.library {
