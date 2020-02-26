@@ -307,18 +307,27 @@
         <section class="start">
             <div class="container">
                 <div class="start__row">
+                    <div class="grid__item_2">
+                        <div class="start__cta">
+                            <h2 class="start__cta_title">Start developing now!</h2>
+                            <p class="start__cta_text">Two ways to integrate in your ethereum app.</p>
+                        </div>
+                    </div>
                     <div class="grid__item_1">
                         <div class="start__card start__card_1 start__theme_purple">
                             <div class="start__card_top">
                                 <h6 class="start__card_number">01</h6>
                                 <div class="dash"></div>
                             </div>
-                            <h3 class="start__card_title">Fast and easy: <b>install</b></h3>
-                            <p class="start__card_text">Your users can use any existing UniLogin provider to access your
-                                app. Just add one line of code!</p>
+                            <h3 class="start__card_title">Installation</h3>
                             <div class="start__picker">
                                 <label for="providerPicker" class="start__label">Pick your manager:</label>
-                                <div class="start__select_wrapper">
+                                <ul class="start__options_wrapper manager">
+                                    <li class="start__option manager" data-value="npm install @unilogin/provider"><p class="start__option_text">yarn</p></li>
+                                    <li class="start__option manager active" data-value="yarn add @unilogin/provider"><p class="start__option_text">npm</p></li>
+                                    <li class="start__option manager" data-value="&ltscript src=&#148https://unpkg.com/@unilogin/provider&#148&#062<br>&lt &#47script&#062"><p class="start__option_text">in the browser (CDN)</p></li>
+                                </ul>
+                                <!-- <div class="start__select_wrapper">
                                     <div class="start__select" id="start__select_manager">
                                         <button class="start__select_text" id="start__placeholder_manager">npm</button>
                                         <ul class="start__select_options" id="start__select_options_manager">
@@ -334,16 +343,11 @@
                                         </ul>
                                     </div>
                                     <img src="./assets/images/svg/CaretDown.svg" id="start__icon_manager" alt="Caret down icon" class="start__select_icon">
-                                </div>
+                                </div> -->
                                 <div id="providerOutput" class="start__code_wrapper manager">
-                                    <p class="start__code" id="start__code_manager">npm install @unilogin/provider</p>
+                                    <code class="start__code" id="start__code_manager">npm install @unilogin/provider</code>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="grid__item_2">
-                        <div class="start__cta">
-                            <h2 class="start__cta_title">Start developing now!</h2>
                         </div>
                     </div>
                     <div class="grid__item_3">
@@ -352,11 +356,9 @@
                                 <h6 class="start__card_number">02</h6>
                                 <div class="dash"></div>
                             </div>
-                            <h3 class="start__card_title">Start using right away</h3>
-                            <p class="start__card_text">If your app is a wallet or interacts with Ethereum network you can build your own UniLogin provider.</p>
+                            <h3 class="start__card_title">Configuration</h3>
                             <div class="start__picker">
-                                <label for="providerPicker" class="start__label">Pick your library:</label>
-                                <div class="start__select_wrapper">
+                                <!-- <div class="start__select_wrapper">
                                     <div class="start__select" id="start__select_library">
                                         <button class="start__select_text" id="start__placeholder_library">web3js</button>
                                         <ul class="start__select_options" id="start__select_options_library">
@@ -369,10 +371,25 @@
                                         </ul>
                                     </div>
                                     <img src="./assets/images/svg/CaretDown.svg" id="start__icon_library" alt="Caret down icon" class="start__select_icon">
-                                </div>
-                                <div id="providerOutput" class="start__code_wrapper library">
-                                    <p class="start__code" id="start__code_library">ul = ULIframeProvider.createPicker(window.ethereum);<br>
-                                        web3 = new Web3(ul);<p>
+                                </div> -->
+                                <label for="providerPicker" class="start__label">I am using:</label>
+                                <ul class="start__options_wrapper two language">
+                                    <li class="start__option language" data-value="JavaScript"><p class="start__option_text">JavaScript</p></li>
+                                    <li class="start__option language active" data-value="TypeScript"><p class="start__option_text">TypeScript</p></li>
+                                </ul>
+                                <label for="providerPicker" class="start__label">I am using library:</label>
+                                <ul class="start__options_wrapper two language">
+                                    <li class="start__option library active" data-value="Ether.js"><p class="start__option_text">Ether.js</p></li>
+                                    <li class="start__option library" data-value="web3.js"><p class="start__option_text">web3.js</p></li>
+                                </ul>
+                                <label for="providerPicker" class="start__label">I want:</label>
+                                <ul class="start__options_wrapper two language">
+                                    <li class="start__option provider active" data-value="UniLogin"><p class="start__option_text">to use only UniLogin</p></li>
+                                    <li class="start__option provider" data-value="Metamask/UniLogin"><p class="start__option_text">user to be able to pick Metamask or UniLogin</p></li>
+                                </ul>
+                                <div id="providerOutput" class="start__code_wrapper configuration">
+                                    <pre class="start__code_text_wrapper"><code class="start__code" id="start__code_configuration">ul = ULIframeProvider.createPicker(window.ethereum);<br>
+                                        web3 = new Web3(ul);</code></pre>
                                 </div>
                                 </div>
                         </div>
