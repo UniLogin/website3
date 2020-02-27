@@ -1,4 +1,4 @@
-import Prism from 'prismjs';
+import Prism from './prism';
 import { ts_ethers_metamask_unilogin, ts_web3_metamask_unilogin, ts_ethers_unilogin, ts_web3_unilogin } from "./configurationData";
 import { js_ethers_metamask_unilogin, js_web3_metamask_unilogin, js_ethers_unilogin, js_web3_unilogin } from "./configurationData";
 
@@ -20,16 +20,15 @@ export const removeSelection = (options) => {
 }
 
 export const getConfiguration = (optionValues) => {
-    console.log(optionValues.join(','));
     switch (optionValues.join(',')) {
-        case 'TypeScript,Ether.js,Metamask/UniLogin': return ts_ethers_metamask_unilogin;
-        case 'TypeScript,web3.js,Metamask/UniLogin': return ts_web3_metamask_unilogin;
-        case 'TypeScript,Ether.js,UniLogin': return ts_ethers_unilogin;
-        case 'TypeScript,web3.js,UniLogin': return ts_web3_unilogin;
-        case 'JavaScript,Ether.js,Metamask/UniLogin': return js_ethers_metamask_unilogin;
-        case 'JavaScript,web3.js,Metamask/UniLogin': return js_web3_metamask_unilogin;
-        case 'JavaScript,Ether.js,UniLogin': return js_ethers_unilogin;
-        case 'JavaScript,web3.js,UniLogin': return js_web3_unilogin;
+        case 'TypeScript,Ether.js,Metamask/UniLogin': return {data: ts_ethers_metamask_unilogin, language: 'typescript'};
+        case 'TypeScript,web3.js,Metamask/UniLogin': return {data: ts_web3_metamask_unilogin, language: 'typescript'};
+        case 'TypeScript,Ether.js,UniLogin': return {data: ts_ethers_unilogin, language: 'typescript'};
+        case 'TypeScript,web3.js,UniLogin': return {data: ts_web3_unilogin, language: 'typescript'};
+        case 'JavaScript,Ether.js,Metamask/UniLogin': return {data: js_ethers_metamask_unilogin, language: 'javascript'};
+        case 'JavaScript,web3.js,Metamask/UniLogin': return {data: js_web3_metamask_unilogin, language: 'javascript'};
+        case 'JavaScript,Ether.js,UniLogin': return {data: js_ethers_unilogin, language: 'javascript'};
+        case 'JavaScript,web3.js,UniLogin': return {data: js_web3_unilogin, language: 'javascript'};
         default: console.log('none');
     }
 }
@@ -42,14 +41,19 @@ export const configurationPicker = (languageOptions, libraryOptions, providerOpt
     let language = getInitialValues(languageOptions[0].parentElement);
     let library = getInitialValues(libraryOptions[0].parentElement);
     let provider = getInitialValues(providerOptions[0].parentElement); 
-    output.innerHTML = Prism.highlight(getConfiguration([language, library, provider]), Prism.languages.javascript, 'javascript');
+    output.innerHTML = Prism.highlight(getConfiguration([language, library, provider]).data, Prism.languages.typescript, 'typescript');
 
     for (const item of languageOptions) {
         item.addEventListener('click', () => {
             removeSelection(languageOptions);
             item.classList.add('active');
             language = item.getAttribute('data-value');
-            output.innerHTML = Prism.highlight(getConfiguration([language, library, provider]), Prism.languages.javascript, 'javascript'); 
+            let configuration = getConfiguration([language, library, provider]);
+            if(configurationPicker.language === "javascript") {
+               output.innerHTML = Prism.highlight(configuration.data, Prism.languages.javascript, 'javascript'); 
+            } else {
+               output.innerHTML = Prism.highlight(configuration.data, Prism.languages.typescript, 'typescript'); 
+            }
         });
     };
 
@@ -58,7 +62,12 @@ export const configurationPicker = (languageOptions, libraryOptions, providerOpt
             removeSelection(libraryOptions);
             item.classList.add('active');
             library = item.getAttribute('data-value');
-            output.innerHTML = Prism.highlight(getConfiguration([language, library, provider]), Prism.languages.javascript, 'javascript'); 
+            let configuration = getConfiguration([language, library, provider]);
+            if(configurationPicker.language === "javascript") {
+               output.innerHTML = Prism.highlight(configuration.data, Prism.languages.javascript, 'javascript'); 
+            } else {
+               output.innerHTML = Prism.highlight(configuration.data, Prism.languages.typescript, 'typescript'); 
+            }
         });
     };
 
@@ -67,7 +76,12 @@ export const configurationPicker = (languageOptions, libraryOptions, providerOpt
             removeSelection(providerOptions);
             item.classList.add('active');
             provider = item.getAttribute('data-value');
-            output.innerHTML = Prism.highlight(getConfiguration([language, library, provider]), Prism.languages.javascript, 'javascript'); 
+            let configuration = getConfiguration([language, library, provider]);
+            if(configurationPicker.language === "javascript") {
+               output.innerHTML = Prism.highlight(configuration.data, Prism.languages.javascript, 'javascript'); 
+            } else {
+               output.innerHTML = Prism.highlight(configuration.data, Prism.languages.typescript, 'typescript'); 
+            }
         });
     };
 }
