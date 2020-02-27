@@ -1,4 +1,5 @@
 import {getConfiguration, managerHandler, configurationPicker} from './pickerHandler';
+import ClipboardJS from 'clipboard';
 
 (() => {
     let managerOptions = document.querySelectorAll(".start__option.manager");

@@ -36,6 +36,7 @@ const transaction = await signer.sendTransaction({
 export const ts_web3_unilogin = `
 import UniLogin from '@unilogin/provider'
 import web3 from 'web3'
+
 const web3 = new Web3()
 const [account] = await web3.eth.getAccounts(UniLogin.create('mainnet'))
 const tx = await web3.eth.sendTransaction({
@@ -48,6 +49,7 @@ const tx = await web3.eth.sendTransaction({
 export const js_ethers_metamask_unilogin = `
 const ULIFrameProvider = require('@unilogin/provider')
 const { providers, utils } = require('ethers')
+
 const provider = new providers.Web3Provider(ULIFrameProvider.createPicker(window.ethereum))
 const signer = provider.getSigner()
 signer.sendTransaction({
@@ -59,6 +61,7 @@ signer.sendTransaction({
 export const js_web3_metamask_unilogin = `
 const ULIFrameProvider = require('@unilogin/provider')
 const Web3 = require('web3')
+
 const web3 = new Web3(ULIFrameProvider.createPicker(window.ethereum))
 web3.eth.getAccounts()
   .then(accounts => web3.eth.sendTransaction({
@@ -71,6 +74,7 @@ web3.eth.getAccounts()
 export const js_ethers_unilogin = `
 const UniLogin = require('@unilogin/provider')
 const {providers, utils} = require('ethers')
+
 const provider = new providers.Web3Provider(UniLogin.create('mainnet'))
 const signer = provider.getSigner()
 signer.sendTransaction({
@@ -82,6 +86,7 @@ signer.sendTransaction({
 export const js_web3_unilogin = `
 const UniLogin = require('@unilogin/provider')
 const web3 = require('web3')
+
 const web3 = new Web3(UniLogin.create('mainnet'))
 web3.eth.getAccounts()
   .then(accounts => web3.eth.sendTransaction({

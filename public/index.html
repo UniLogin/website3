@@ -325,7 +325,7 @@
                                 <ul class="start__options_wrapper manager">
                                     <li class="start__option manager" data-value="npm install @unilogin/provider"><p class="start__option_text">yarn</p></li>
                                     <li class="start__option manager active" data-value="yarn add @unilogin/provider"><p class="start__option_text">npm</p></li>
-                                    <li class="start__option manager" data-value="&ltscript src=&#148https://unpkg.com/@unilogin/provider&#148&#062<br>&lt &#47script&#062"><p class="start__option_text">in the browser (CDN)</p></li>
+                                    <li id='option-cdn' class="start__option manager" data-value="CDN"><p class="start__option_text">in the browser<br><span class="start__option_cdn">CDN</span></p></li>
                                 </ul>
                                 <!-- <div class="start__select_wrapper">
                                     <div class="start__select" id="start__select_manager">
@@ -344,8 +344,9 @@
                                     </div>
                                     <img src="./assets/images/svg/CaretDown.svg" id="start__icon_manager" alt="Caret down icon" class="start__select_icon">
                                 </div> -->
+                                <label for="providerPicker" class="start__label">To install simply type:</label>
                                 <div id="providerOutput" class="start__code_wrapper manager">
-                                    <code class="start__code" id="start__code_manager">npm install @unilogin/provider</code>
+                                    <div class="start__code_text_wrapper"><code class="start__code" id="start__code_manager">npm install @unilogin/provider</code></div>
                                 </div>
                             </div>
                         </div>
@@ -388,8 +389,13 @@
                                     <li class="start__option provider" data-value="Metamask/UniLogin"><p class="start__option_text">user to be able to pick Metamask or UniLogin</p></li>
                                 </ul>
                                 <div id="providerOutput" class="start__code_wrapper configuration">
+
                                     <pre class="start__code_text_wrapper"><code class="start__code" id="start__code_configuration">ul = ULIframeProvider.createPicker(window.ethereum);<br>
                                         web3 = new Web3(ul);</code></pre>
+                                    <button id="copy-configuration" class="start__copy-btn" data-clipboard-target="#start__code_configuration">
+                                        <img src="./assets/images/svg/copy.svg" alt="" class="start__copy-btn_icon">
+                                        <p>Copy code</p>
+                                    </button>
                                 </div>
                                 </div>
                         </div>

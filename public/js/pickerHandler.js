@@ -77,7 +77,12 @@ export const managerHandler = (options, output) => {
         option.addEventListener('click', () => {
             removeSelection(options);
             option.classList.add('active');
-            output.innerHTML = option.getAttribute('data-value');
+            let attrValue = option.getAttribute('data-value');
+            if (attrValue === 'CDN') {
+                output.innerText = '<script src=”https://unpkg.com/@unilogin/provider”></script>';
+            } else {
+                output.innerHTML = attrValue;
+            }
         });
     };
 };
