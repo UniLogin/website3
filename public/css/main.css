@@ -1,3 +1,4 @@
 @import './vendor/minireset.css';
+@import './vendor/prism.css';
 @import './base/all.css';
 @import '../../node_modules/swiper/css/swiper.css';
