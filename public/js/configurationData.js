@@ -14,7 +14,7 @@ import Web3 from 'web3'
 
 const ulProvider = UniLogin.createPicker(window.ethereum)
 const web3 = new Web3(ulProvider)
-const [account] = await web3.eth.getAccounts()
+const [account] = await web3.eth.requestAccounts()
 const tx = await web3.eth.sendTransaction({
   from: account,
   to: '0xF80fd6F5eF91230805508bB28d75248024E50F6F',
@@ -38,7 +38,7 @@ import Web3 from 'web3'
 
 const ulProvider = UniLogin.create('mainnet')
 const web3 = new Web3(ulProvider)
-const [account] = await web3.eth.getAccounts()
+const [account] = await web3.eth.requestAccounts()
 const tx = await web3.eth.sendTransaction({
   from: account,
   to: '0xF80fd6F5eF91230805508bB28d75248024E50F6F',
@@ -63,7 +63,7 @@ const Web3 = require('web3')
 
 const ulProvider = UniLogin.createPicker(window.ethereum)
 const web3 = new Web3(ulProvider)
-web3.eth.getAccounts()
+web3.eth.requestAccounts()
   .then(accounts => web3.eth.sendTransaction({
     from: accounts[0],
     to: '0xF80fd6F5eF91230805508bB28d75248024E50F6F',
@@ -88,11 +88,10 @@ const Web3 = require('web3')
 
 const ulProvider = UniLogin.create('mainnet')
 const web3 = new Web3(ulProvider)
-web3.eth.getAccounts()
+web3.eth.requestAccounts()
   .then(accounts => web3.eth.sendTransaction({
     from: accounts[0],
     to: '0xF80fd6F5eF91230805508bB28d75248024E50F6F',
     value: web3.utils.toWei('0.003'),
   }).then(console.log))
 `
-
