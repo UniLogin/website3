@@ -76,6 +76,10 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+.start__options_wrapper.three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .start__option {
     background: #fff;
     color: #7D7C9C;
