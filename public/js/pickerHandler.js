@@ -1,6 +1,6 @@
 import Prism from './prism';
-import { ts_ethers_metamask_unilogin, ts_web3_metamask_unilogin, ts_ethers_unilogin, ts_web3_unilogin } from "./configurationData";
-import { js_ethers_metamask_unilogin, js_web3_metamask_unilogin, js_ethers_unilogin, js_web3_unilogin } from "./configurationData";
+import { ts_ethers_metamask_unilogin, ts_web3_metamask_unilogin, ts_ethers_unilogin, ts_web3_unilogin, ts_web3_dep_metamask_unilogin, ts_web3_dep_unilogin } from "./configurationData";
+import { js_ethers_metamask_unilogin, js_web3_metamask_unilogin, js_ethers_unilogin, js_web3_unilogin, js_web3_dep_metamask_unilogin, js_web3_dep_unilogin } from "./configurationData";
 
 export const optionHandler = (options, callback) => {
     let selectedValue = "";
@@ -23,12 +23,16 @@ export const getConfiguration = (optionValues) => {
     switch (optionValues.join(',')) {
         case 'TypeScript,Ether.js,Metamask/UniLogin': return {data: ts_ethers_metamask_unilogin, language: 'typescript'};
         case 'TypeScript,web3.js,Metamask/UniLogin': return {data: ts_web3_metamask_unilogin, language: 'typescript'};
+        case 'TypeScript,web3.deprecated.js,Metamask/UniLogin': return {data: ts_web3_dep_metamask_unilogin, language: 'typescript'};
         case 'TypeScript,Ether.js,UniLogin': return {data: ts_ethers_unilogin, language: 'typescript'};
         case 'TypeScript,web3.js,UniLogin': return {data: ts_web3_unilogin, language: 'typescript'};
+        case 'TypeScript,web3.deprecated.js,UniLogin': return {data: ts_web3_dep_unilogin, language: 'typescript'};
         case 'JavaScript,Ether.js,Metamask/UniLogin': return {data: js_ethers_metamask_unilogin, language: 'javascript'};
         case 'JavaScript,web3.js,Metamask/UniLogin': return {data: js_web3_metamask_unilogin, language: 'javascript'};
+        case 'JavaScript,web3.deprecated.js,Metamask/UniLogin': return {data: js_web3_dep_metamask_unilogin, language: 'javascript'};
         case 'JavaScript,Ether.js,UniLogin': return {data: js_ethers_unilogin, language: 'javascript'};
         case 'JavaScript,web3.js,UniLogin': return {data: js_web3_unilogin, language: 'javascript'};
+        case 'JavaScript,web3.deprecated.js,UniLogin': return {data: js_web3_dep_unilogin, language: 'javascript'};
         default: console.log('none');
     }
 }
