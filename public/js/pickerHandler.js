@@ -21,16 +21,16 @@ export const removeSelection = (options) => {
 
 export const getConfiguration = (optionValues) => {
     switch (optionValues.join(',')) {
-        case 'TypeScript,Ether.js,Metamask/UniLogin': return {data: ts_ethers_metamask_unilogin, language: 'typescript'};
+        case 'TypeScript,Ethers.js,Metamask/UniLogin': return {data: ts_ethers_metamask_unilogin, language: 'typescript'};
         case 'TypeScript,web3.js,Metamask/UniLogin': return {data: ts_web3_metamask_unilogin, language: 'typescript'};
         case 'TypeScript,web3.deprecated.js,Metamask/UniLogin': return {data: ts_web3_dep_metamask_unilogin, language: 'typescript'};
-        case 'TypeScript,Ether.js,UniLogin': return {data: ts_ethers_unilogin, language: 'typescript'};
+        case 'TypeScript,Ethers.js,UniLogin': return {data: ts_ethers_unilogin, language: 'typescript'};
         case 'TypeScript,web3.js,UniLogin': return {data: ts_web3_unilogin, language: 'typescript'};
         case 'TypeScript,web3.deprecated.js,UniLogin': return {data: ts_web3_dep_unilogin, language: 'typescript'};
-        case 'JavaScript,Ether.js,Metamask/UniLogin': return {data: js_ethers_metamask_unilogin, language: 'javascript'};
+        case 'JavaScript,Ethers.js,Metamask/UniLogin': return {data: js_ethers_metamask_unilogin, language: 'javascript'};
         case 'JavaScript,web3.js,Metamask/UniLogin': return {data: js_web3_metamask_unilogin, language: 'javascript'};
         case 'JavaScript,web3.deprecated.js,Metamask/UniLogin': return {data: js_web3_dep_metamask_unilogin, language: 'javascript'};
-        case 'JavaScript,Ether.js,UniLogin': return {data: js_ethers_unilogin, language: 'javascript'};
+        case 'JavaScript,Ethers.js,UniLogin': return {data: js_ethers_unilogin, language: 'javascript'};
         case 'JavaScript,web3.js,UniLogin': return {data: js_web3_unilogin, language: 'javascript'};
         case 'JavaScript,web3.deprecated.js,UniLogin': return {data: js_web3_dep_unilogin, language: 'javascript'};
         default: console.log('none');
