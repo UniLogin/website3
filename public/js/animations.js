@@ -1,7 +1,7 @@
 import { waypoint } from './waypoint';
 
 (() => {
-    const trustedByRow = document.querySelector('.trusted-by__row');
+    const trustedByRow = document.querySelector('.projects-using__row');
     const collectionTitle = document.querySelector('.collection__title');
     const collectionText = document.querySelector('.collection__text');
     const collectionCard = document.querySelector('.collection__card');
