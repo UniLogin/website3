@@ -1,7 +1,7 @@
 import { tns } from "tiny-slider/src/tiny-slider";
 (() => {
   const companiesSlider = tns({
-    container: '.trusted-by__companies',
+    container: '.projects-using__companies',
     items: 4,
     autoplay: true,
     mouseDrag: true,
