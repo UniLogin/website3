@@ -1,7 +1,7 @@
 .social__links {
     position: absolute;
     position: fixed;
-    top: 3.6rem;
+    top: 8.6rem;
     right: 3.7rem;
     display: grid;
     grid-template-columns: 1fr;
@@ -100,12 +100,17 @@
     pointer-events: none;
 }
 
+@media only screen and (max-width: 750px) {
+    .social__links {
+        top: 10.6rem;
+    }
+}
+
 @media only screen and (max-width: 614px) {
     .social__links {
         grid-template-columns: repeat(3, min-content);
         grid-template-rows: 1fr;
         grid-column-gap: .8rem;
-        top: 1.6rem;
         right: 2rem;
         position: absolute;
     }
